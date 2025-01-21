@@ -1,0 +1,94 @@
+<!--
+index.html
+Frontend version 1.0
+Created by Ingenuity i/o on 2025/01/15
+
+la partie front de l'app
+Copyright © 2023 Ingenuity i/o. All rights reserved.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	  	<meta charset="utf-8">
+	  	<title>Pseudo-agent Ingescape</title>
+	  	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+  <body>
+      <div class="container">
+          <br>
+          <div class="center-div" >
+              Server URL <input type="text" id="serverURL">
+              <input type="button" value="Connect" onclick="setServerURL()" />
+              <div id="connectedToServer" style="vertical-align: middle; display:inline-block;border-radius: 30px;background: red; width:15px;height:15px"></div>
+          </div>
+          <br>
+          <div class="center-div">
+              <span id="name" style="font-size: 20px;"></span>
+          </div>
+          <br>
+          <div class="center-div">
+              <input type="button" value="Action button" onclick="executeAction()" />
+          </div>
+          <br>
+
+          <table>
+              <tr>
+                <td valign="top">
+                <table>
+                    <tbody>
+                        <tr align="center">
+                            <td colspan=2><b>Outputs</b></td>
+                        </tr>
+                        <tr>
+                            <td align="right">symbol</td>
+                            <td align="left">
+                                <input type="text" id="symbol_output">
+                                <input type="button" value="&#10003" onclick="setsymbolOutput()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">timeframe</td>
+                            <td align="left">
+                                <input type="text" id="timeframe_output">
+                                <input type="button" value="&#10003" onclick="settimeframeOutput()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">start_time</td>
+                            <td align="left">
+                                <input type="number" id="start_time_output" step="0.1">
+                                <input type="button" value="&#10003" onclick="setstart_timeOutput()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">end_time</td>
+                            <td align="left">
+                                <input type="number" id="end_time_output" step="0.1">
+                                <input type="button" value="&#10003" onclick="setend_timeOutput()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">manual_order</td>
+                            <td align="left">
+                                <form>
+                                    <input type="text" id="manual_order_output" title="Expected hexadecimal format" pattern="^(?:[0-9A-Fa-f]{2})+$">
+                                    <button onclick="return setmanual_orderOutput()">&#10003</button>
+                                </form>
+                            </td>
+                        </tr>
+                  </tbody>
+                </table>
+                </td>
+              </tr>
+          </table>
+      </div>
+
+      <script src="js/ingescape.js" charset="utf-8"></script>
+      <script src="js/index.js" charset="utf-8"></script>
+	</body>
+</html>
+
+
+

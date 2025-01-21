@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# L'interface du serveur DNS
+ip link set dev eth0 up
+ip a a 170.4.255.197/26 dev eth0
+
+# Le routage statique
+#ip route add 192.168.150.128/26 via 170.4.255.195
+#ip route add 192.168.150.192/26 via 170.4.255.195
+#ip route add 170.4.255.128/26 via 170.4.255.195
+#ip route add 170.4.255.64/26 via 170.4.255.195
+#ip route add 170.4.255.0/26 via 170.4.255.195
+
+# Ajouter la route par défaut
+ip route add default via 170.4.255.195
+
+# Tuto : https://www.itzgeek.com/how-tos/linux/debian/configure-dns-server-on-debian-9-ubuntu-16-04.html?utm_content=cmp-true
+# Activer le service BIND9
+service bind9 start
+
+# Donner les permissions
+chmod -R 755 /etc/bind
+chown -R bind:bind /etc/bind
+
+# Redémarrer le service
+service bind9 restart
+
+# Tester la configuration
+named-checkconf /etc/bind/named.conf
+named-checkconf /etc/bind/named.conf.local
+named-checkzone monsupersite.com /etc/bind/zones/monsupersite.db
+named-checkzone clientsite.com /etc/bind/zones/clientsite.db
+named-checkzone 255.4.170.in-addr.arpa /etc/bind/zones/reverse.arpa
+
+
+

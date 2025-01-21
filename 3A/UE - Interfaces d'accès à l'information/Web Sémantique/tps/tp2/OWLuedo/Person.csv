@@ -1,0 +1,388 @@
+currentOrFormerLocation	inRoom	currentOrFormerItem	Name	isAlive	hasItem	inLocation
+Atelier	Chambre	Buste de Tim Berners Lee	Perla Madonna			
+Atelier	Chambre	Epee Legendaire Excalibur	Perla Madonna			
+Atelier	Chambre	oreiller	Perla Madonna			
+Atelier	Chambre	L'Assomoir d'Emile ZOla	Perla Madonna			
+Atelier	Chambre	café	Perla Madonna			
+Atelier	Chambre	Bouteille en sucre	Perla Madonna			
+Atelier	Chambre	Peroxyde d'Hydrogène	Perla Madonna			
+Atelier	Chambre	Glaive	Perla Madonna			
+coin Cheminee	Chambre	Buste de Tim Berners Lee	Perla Madonna			
+coin Cheminee	Chambre	Epee Legendaire Excalibur	Perla Madonna			
+coin Cheminee	Chambre	oreiller	Perla Madonna			
+coin Cheminee	Chambre	L'Assomoir d'Emile ZOla	Perla Madonna			
+coin Cheminee	Chambre	café	Perla Madonna			
+coin Cheminee	Chambre	Bouteille en sucre	Perla Madonna			
+coin Cheminee	Chambre	Peroxyde d'Hydrogène	Perla Madonna			
+coin Cheminee	Chambre	Glaive	Perla Madonna			
+Dressing	Dressing	Nokia 3310	Polly Esther			
+Dressing	Dressing	Scie Sauteuse	Polly Esther			
+Dressing	Dressing	Acide Fluoro-Antimonique	Polly Esther			
+Dressing	Dressing	Pied de Biche	Polly Esther			
+Dressing	Dressing	curry	Polly Esther			
+Dressing	Dressing	L'Assomoir d'Emile ZOla	Polly Esther			
+Dressing	Dressing	Peluche de Requin	Polly Esther			
+Dressing	Dressing	Katana	Polly Esther			
+Dressing	Dressing	café	Polly Esther			
+Dressing	Dressing	Tronçonneuse	Polly Esther			
+Dressing	Dressing	Dague	Polly Esther			
+Dressing	Dressing	Glaive	Polly Esther			
+Dressing	Dressing	Poignard	Polly Esther			
+Home Cinema	Piece exposition Lego	Epee Legendaire Excalibur	Oscar Bone			
+Home Cinema	Piece exposition Lego	Katana	Oscar Bone			
+espace de Restauration	Piece exposition Lego	Epee Legendaire Excalibur	Oscar Bone			
+espace de Restauration	Piece exposition Lego	Katana	Oscar Bone			
+Piece exposition Lego	Piece exposition Lego	Epee Legendaire Excalibur	Oscar Bone			
+Piece exposition Lego	Piece exposition Lego	Katana	Oscar Bone			
+Cuisine	Piece exposition Lego	Epee Legendaire Excalibur	Oscar Bone			
+Cuisine	Piece exposition Lego	Katana	Oscar Bone			
+Salon	Bibliothèque	Revolver Python 357	Ana Conda			
+Salon	Bibliothèque	Penny Géant	Ana Conda			
+Salon	Bibliothèque	oreiller	Ana Conda			
+Salon	Bibliothèque	Katana	Ana Conda			
+Salon	Bibliothèque	Formol	Ana Conda			
+Chambre	Bibliothèque	Revolver Python 357	Ana Conda			
+Chambre	Bibliothèque	Penny Géant	Ana Conda			
+Chambre	Bibliothèque	oreiller	Ana Conda			
+Chambre	Bibliothèque	Katana	Ana Conda			
+Chambre	Bibliothèque	Formol	Ana Conda			
+échafaud pour Peinture	Bibliothèque	Revolver Python 357	Ana Conda			
+échafaud pour Peinture	Bibliothèque	Penny Géant	Ana Conda			
+échafaud pour Peinture	Bibliothèque	oreiller	Ana Conda			
+échafaud pour Peinture	Bibliothèque	Katana	Ana Conda			
+échafaud pour Peinture	Bibliothèque	Formol	Ana Conda			
+Bibliothèque	Bibliothèque	Revolver Python 357	Ana Conda			
+Bibliothèque	Bibliothèque	Penny Géant	Ana Conda			
+Bibliothèque	Bibliothèque	oreiller	Ana Conda			
+Bibliothèque	Bibliothèque	Katana	Ana Conda			
+Bibliothèque	Bibliothèque	Formol	Ana Conda			
+Home Cinema	Salon	Buste de Tim Berners Lee	Raimond Tology			
+Home Cinema	Salon	Penny Géant	Raimond Tology			
+Home Cinema	Salon	curry	Raimond Tology			
+Home Cinema	Salon	Katana	Raimond Tology			
+Home Cinema	Salon	Tronçonneuse	Raimond Tology			
+espace de Restauration	Salon	Buste de Tim Berners Lee	Raimond Tology			
+espace de Restauration	Salon	Penny Géant	Raimond Tology			
+espace de Restauration	Salon	curry	Raimond Tology			
+espace de Restauration	Salon	Katana	Raimond Tology			
+espace de Restauration	Salon	Tronçonneuse	Raimond Tology			
+échafaud pour Peinture	Salon	Buste de Tim Berners Lee	Raimond Tology			
+échafaud pour Peinture	Salon	Penny Géant	Raimond Tology			
+échafaud pour Peinture	Salon	curry	Raimond Tology			
+échafaud pour Peinture	Salon	Katana	Raimond Tology			
+échafaud pour Peinture	Salon	Tronçonneuse	Raimond Tology			
+Atelier	Salon	Buste de Tim Berners Lee	Raimond Tology			
+Atelier	Salon	Penny Géant	Raimond Tology			
+Atelier	Salon	curry	Raimond Tology			
+Atelier	Salon	Katana	Raimond Tology			
+Atelier	Salon	Tronçonneuse	Raimond Tology			
+coin Cheminee	Salon	Buste de Tim Berners Lee	Raimond Tology			
+coin Cheminee	Salon	Penny Géant	Raimond Tology			
+coin Cheminee	Salon	curry	Raimond Tology			
+coin Cheminee	Salon	Katana	Raimond Tology			
+coin Cheminee	Salon	Tronçonneuse	Raimond Tology			
+Salon	Serre	Pied de Biche	Lena Ture			
+Salon	Serre	oreiller	Lena Ture			
+Salon	Serre	Hachoir de Cuisine	Lena Ture			
+Salon	Serre	Peroxyde d'Hydrogène	Lena Ture			
+Salon	Serre	Mort au rats	Lena Ture			
+Serre	Serre	Pied de Biche	Lena Ture			
+Serre	Serre	oreiller	Lena Ture			
+Serre	Serre	Hachoir de Cuisine	Lena Ture			
+Serre	Serre	Peroxyde d'Hydrogène	Lena Ture			
+Serre	Serre	Mort au rats	Lena Ture			
+Dance Floor	Serre	Pied de Biche	Lena Ture			
+Dance Floor	Serre	oreiller	Lena Ture			
+Dance Floor	Serre	Hachoir de Cuisine	Lena Ture			
+Dance Floor	Serre	Peroxyde d'Hydrogène	Lena Ture			
+Dance Floor	Serre	Mort au rats	Lena Ture			
+Dressing	Serre	Pied de Biche	Lena Ture			
+Dressing	Serre	oreiller	Lena Ture			
+Dressing	Serre	Hachoir de Cuisine	Lena Ture			
+Dressing	Serre	Peroxyde d'Hydrogène	Lena Ture			
+Dressing	Serre	Mort au rats	Lena Ture			
+Atelier	Atelier	Ballon ovale dégonflé	Jean Neymar			
+Atelier	Atelier	Alcool à brûler	Jean Neymar			
+Atelier	Atelier	curry	Jean Neymar			
+Atelier	Atelier	Katana	Jean Neymar			
+Atelier	Atelier	café	Jean Neymar			
+Atelier	Atelier	Hachoir de Cuisine	Jean Neymar			
+Atelier	Atelier	Tronçonneuse	Jean Neymar			
+Atelier	Atelier	Poignard	Jean Neymar			
+coin Cheminee	Atelier	Ballon ovale dégonflé	Jean Neymar			
+coin Cheminee	Atelier	Alcool à brûler	Jean Neymar			
+coin Cheminee	Atelier	curry	Jean Neymar			
+coin Cheminee	Atelier	Katana	Jean Neymar			
+coin Cheminee	Atelier	café	Jean Neymar			
+coin Cheminee	Atelier	Hachoir de Cuisine	Jean Neymar			
+coin Cheminee	Atelier	Tronçonneuse	Jean Neymar			
+coin Cheminee	Atelier	Poignard	Jean Neymar			
+Home Cinema	Salon	oreiller	Osama Najimi			
+Chambre	Salon	oreiller	Osama Najimi			
+espace de Restauration	Salon	oreiller	Osama Najimi			
+échafaud pour Peinture	Salon	oreiller	Osama Najimi			
+Bibliothèque	Salon	oreiller	Osama Najimi			
+Dance Floor	Salon	oreiller	Osama Najimi			
+Serre	Chambre	Nokia 3310	Bertha Bassez			
+Serre	Chambre	Alcool à brûler	Bertha Bassez			
+Serre	Chambre	Lance	Bertha Bassez			
+Serre	Chambre	Scie Sauteuse	Bertha Bassez			
+Serre	Chambre	Pied de Biche	Bertha Bassez			
+Serre	Chambre	Epee Legendaire Excalibur	Bertha Bassez			
+Serre	Chambre	Tronçonneuse	Bertha Bassez			
+Serre	Chambre	Bouteille en sucre	Bertha Bassez			
+Serre	Chambre	Peroxyde d'Hydrogène	Bertha Bassez			
+Serre	Chambre	Dague	Bertha Bassez			
+Serre	Chambre	Glaive	Bertha Bassez			
+échafaud pour Peinture	Chambre	Nokia 3310	Bertha Bassez			
+échafaud pour Peinture	Chambre	Alcool à brûler	Bertha Bassez			
+échafaud pour Peinture	Chambre	Lance	Bertha Bassez			
+échafaud pour Peinture	Chambre	Scie Sauteuse	Bertha Bassez			
+échafaud pour Peinture	Chambre	Pied de Biche	Bertha Bassez			
+échafaud pour Peinture	Chambre	Epee Legendaire Excalibur	Bertha Bassez			
+échafaud pour Peinture	Chambre	Tronçonneuse	Bertha Bassez			
+échafaud pour Peinture	Chambre	Bouteille en sucre	Bertha Bassez			
+échafaud pour Peinture	Chambre	Peroxyde d'Hydrogène	Bertha Bassez			
+échafaud pour Peinture	Chambre	Dague	Bertha Bassez			
+échafaud pour Peinture	Chambre	Glaive	Bertha Bassez			
+Dressing	Chambre	Nokia 3310	Bertha Bassez			
+Dressing	Chambre	Alcool à brûler	Bertha Bassez			
+Dressing	Chambre	Lance	Bertha Bassez			
+Dressing	Chambre	Scie Sauteuse	Bertha Bassez			
+Dressing	Chambre	Pied de Biche	Bertha Bassez			
+Dressing	Chambre	Epee Legendaire Excalibur	Bertha Bassez			
+Dressing	Chambre	Tronçonneuse	Bertha Bassez			
+Dressing	Chambre	Bouteille en sucre	Bertha Bassez			
+Dressing	Chambre	Peroxyde d'Hydrogène	Bertha Bassez			
+Dressing	Chambre	Dague	Bertha Bassez			
+Dressing	Chambre	Glaive	Bertha Bassez			
+Atelier	Chambre	Nokia 3310	Bertha Bassez			
+Atelier	Chambre	Alcool à brûler	Bertha Bassez			
+Atelier	Chambre	Lance	Bertha Bassez			
+Atelier	Chambre	Scie Sauteuse	Bertha Bassez			
+Atelier	Chambre	Pied de Biche	Bertha Bassez			
+Atelier	Chambre	Epee Legendaire Excalibur	Bertha Bassez			
+Atelier	Chambre	Tronçonneuse	Bertha Bassez			
+Atelier	Chambre	Bouteille en sucre	Bertha Bassez			
+Atelier	Chambre	Peroxyde d'Hydrogène	Bertha Bassez			
+Atelier	Chambre	Dague	Bertha Bassez			
+Atelier	Chambre	Glaive	Bertha Bassez			
+coin Cheminee	Chambre	Nokia 3310	Bertha Bassez			
+coin Cheminee	Chambre	Alcool à brûler	Bertha Bassez			
+coin Cheminee	Chambre	Lance	Bertha Bassez			
+coin Cheminee	Chambre	Scie Sauteuse	Bertha Bassez			
+coin Cheminee	Chambre	Pied de Biche	Bertha Bassez			
+coin Cheminee	Chambre	Epee Legendaire Excalibur	Bertha Bassez			
+coin Cheminee	Chambre	Tronçonneuse	Bertha Bassez			
+coin Cheminee	Chambre	Bouteille en sucre	Bertha Bassez			
+coin Cheminee	Chambre	Peroxyde d'Hydrogène	Bertha Bassez			
+coin Cheminee	Chambre	Dague	Bertha Bassez			
+coin Cheminee	Chambre	Glaive	Bertha Bassez			
+espace de Restauration	Atelier	Alcool à brûler	Marc Luedo			
+espace de Restauration	Atelier	Pied de Biche	Marc Luedo			
+Piece exposition Lego	Atelier	Alcool à brûler	Marc Luedo			
+Piece exposition Lego	Atelier	Pied de Biche	Marc Luedo			
+Atelier	Atelier	Alcool à brûler	Marc Luedo			
+Atelier	Atelier	Pied de Biche	Marc Luedo			
+Cuisine	Atelier	Alcool à brûler	Marc Luedo			
+Cuisine	Atelier	Pied de Biche	Marc Luedo			
+coin Cheminee	Atelier	Alcool à brûler	Marc Luedo			
+coin Cheminee	Atelier	Pied de Biche	Marc Luedo			
+Home Cinema	Atelier	Ballon ovale dégonflé	Roger Rienkompri			
+Home Cinema	Atelier	Acide Fluoro-Antimonique	Roger Rienkompri			
+Home Cinema	Atelier	Formol	Roger Rienkompri			
+Home Cinema	Atelier	Poignard	Roger Rienkompri			
+échafaud pour Peinture	Atelier	Ballon ovale dégonflé	Roger Rienkompri			
+échafaud pour Peinture	Atelier	Acide Fluoro-Antimonique	Roger Rienkompri			
+échafaud pour Peinture	Atelier	Formol	Roger Rienkompri			
+échafaud pour Peinture	Atelier	Poignard	Roger Rienkompri			
+Dance Floor	Atelier	Ballon ovale dégonflé	Roger Rienkompri			
+Dance Floor	Atelier	Acide Fluoro-Antimonique	Roger Rienkompri			
+Dance Floor	Atelier	Formol	Roger Rienkompri			
+Dance Floor	Atelier	Poignard	Roger Rienkompri			
+Dressing	Atelier	Ballon ovale dégonflé	Roger Rienkompri			
+Dressing	Atelier	Acide Fluoro-Antimonique	Roger Rienkompri			
+Dressing	Atelier	Formol	Roger Rienkompri			
+Dressing	Atelier	Poignard	Roger Rienkompri			
+coin Cheminee	Atelier	Ballon ovale dégonflé	Roger Rienkompri			
+coin Cheminee	Atelier	Acide Fluoro-Antimonique	Roger Rienkompri			
+coin Cheminee	Atelier	Formol	Roger Rienkompri			
+coin Cheminee	Atelier	Poignard	Roger Rienkompri			
+Home Cinema	Atelier	Penny Géant	Omar Tyr	false		
+Home Cinema	Atelier	Acide Fluoro-Antimonique	Omar Tyr	false		
+Home Cinema	Atelier	Pied de Biche	Omar Tyr	false		
+Home Cinema	Atelier	Epee Legendaire Excalibur	Omar Tyr	false		
+Home Cinema	Atelier	Katana	Omar Tyr	false		
+Home Cinema	Atelier	café	Omar Tyr	false		
+Home Cinema	Atelier	Formol	Omar Tyr	false		
+Home Cinema	Atelier	Peroxyde d'Hydrogène	Omar Tyr	false		
+Chambre	Atelier	Penny Géant	Omar Tyr	false		
+Chambre	Atelier	Acide Fluoro-Antimonique	Omar Tyr	false		
+Chambre	Atelier	Pied de Biche	Omar Tyr	false		
+Chambre	Atelier	Epee Legendaire Excalibur	Omar Tyr	false		
+Chambre	Atelier	Katana	Omar Tyr	false		
+Chambre	Atelier	café	Omar Tyr	false		
+Chambre	Atelier	Formol	Omar Tyr	false		
+Chambre	Atelier	Peroxyde d'Hydrogène	Omar Tyr	false		
+Bibliothèque	Atelier	Penny Géant	Omar Tyr	false		
+Bibliothèque	Atelier	Acide Fluoro-Antimonique	Omar Tyr	false		
+Bibliothèque	Atelier	Pied de Biche	Omar Tyr	false		
+Bibliothèque	Atelier	Epee Legendaire Excalibur	Omar Tyr	false		
+Bibliothèque	Atelier	Katana	Omar Tyr	false		
+Bibliothèque	Atelier	café	Omar Tyr	false		
+Bibliothèque	Atelier	Formol	Omar Tyr	false		
+Bibliothèque	Atelier	Peroxyde d'Hydrogène	Omar Tyr	false		
+Piece exposition Lego	Atelier	Penny Géant	Omar Tyr	false		
+Piece exposition Lego	Atelier	Acide Fluoro-Antimonique	Omar Tyr	false		
+Piece exposition Lego	Atelier	Pied de Biche	Omar Tyr	false		
+Piece exposition Lego	Atelier	Epee Legendaire Excalibur	Omar Tyr	false		
+Piece exposition Lego	Atelier	Katana	Omar Tyr	false		
+Piece exposition Lego	Atelier	café	Omar Tyr	false		
+Piece exposition Lego	Atelier	Formol	Omar Tyr	false		
+Piece exposition Lego	Atelier	Peroxyde d'Hydrogène	Omar Tyr	false		
+Cuisine	Atelier	Penny Géant	Omar Tyr	false		
+Cuisine	Atelier	Acide Fluoro-Antimonique	Omar Tyr	false		
+Cuisine	Atelier	Pied de Biche	Omar Tyr	false		
+Cuisine	Atelier	Epee Legendaire Excalibur	Omar Tyr	false		
+Cuisine	Atelier	Katana	Omar Tyr	false		
+Cuisine	Atelier	café	Omar Tyr	false		
+Cuisine	Atelier	Formol	Omar Tyr	false		
+Cuisine	Atelier	Peroxyde d'Hydrogène	Omar Tyr	false		
+coin Cheminee	Atelier	Penny Géant	Omar Tyr	false		
+coin Cheminee	Atelier	Acide Fluoro-Antimonique	Omar Tyr	false		
+coin Cheminee	Atelier	Pied de Biche	Omar Tyr	false		
+coin Cheminee	Atelier	Epee Legendaire Excalibur	Omar Tyr	false		
+coin Cheminee	Atelier	Katana	Omar Tyr	false		
+coin Cheminee	Atelier	café	Omar Tyr	false		
+coin Cheminee	Atelier	Formol	Omar Tyr	false		
+coin Cheminee	Atelier	Peroxyde d'Hydrogène	Omar Tyr	false		
+Dance Floor		Alcool à brûler	Jango Tham		Revolver Python 357	
+Dance Floor		Penny Géant	Jango Tham		Revolver Python 357	
+Dance Floor		cyanure	Jango Tham		Revolver Python 357	
+Dance Floor		Epee Legendaire Excalibur	Jango Tham		Revolver Python 357	
+Dance Floor		curry	Jango Tham		Revolver Python 357	
+Dance Floor		Peluche de Requin	Jango Tham		Revolver Python 357	
+Dance Floor		café	Jango Tham		Revolver Python 357	
+Dance Floor		Formol	Jango Tham		Revolver Python 357	
+Dance Floor		Tronçonneuse	Jango Tham		Revolver Python 357	
+Dance Floor		Peroxyde d'Hydrogène	Jango Tham		Revolver Python 357	
+Dance Floor		Glaive	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Alcool à brûler	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Penny Géant	Jango Tham		Revolver Python 357	
+Piece exposition Lego		cyanure	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Epee Legendaire Excalibur	Jango Tham		Revolver Python 357	
+Piece exposition Lego		curry	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Peluche de Requin	Jango Tham		Revolver Python 357	
+Piece exposition Lego		café	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Formol	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Tronçonneuse	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Peroxyde d'Hydrogène	Jango Tham		Revolver Python 357	
+Piece exposition Lego		Glaive	Jango Tham		Revolver Python 357	
+Dressing		Alcool à brûler	Jango Tham		Revolver Python 357	
+Dressing		Penny Géant	Jango Tham		Revolver Python 357	
+Dressing		cyanure	Jango Tham		Revolver Python 357	
+Dressing		Epee Legendaire Excalibur	Jango Tham		Revolver Python 357	
+Dressing		curry	Jango Tham		Revolver Python 357	
+Dressing		Peluche de Requin	Jango Tham		Revolver Python 357	
+Dressing		café	Jango Tham		Revolver Python 357	
+Dressing		Formol	Jango Tham		Revolver Python 357	
+Dressing		Tronçonneuse	Jango Tham		Revolver Python 357	
+Dressing		Peroxyde d'Hydrogène	Jango Tham		Revolver Python 357	
+Dressing		Glaive	Jango Tham		Revolver Python 357	
+espace de Restauration	Bibliothèque	Buste de Tim Berners Lee	Amy Stake			
+espace de Restauration	Bibliothèque	Pied de Biche	Amy Stake			
+espace de Restauration	Bibliothèque	Epee Legendaire Excalibur	Amy Stake			
+espace de Restauration	Bibliothèque	Katana	Amy Stake			
+espace de Restauration	Bibliothèque	Tronçonneuse	Amy Stake			
+espace de Restauration	Bibliothèque	Dague	Amy Stake			
+échafaud pour Peinture	Bibliothèque	Buste de Tim Berners Lee	Amy Stake			
+échafaud pour Peinture	Bibliothèque	Pied de Biche	Amy Stake			
+échafaud pour Peinture	Bibliothèque	Epee Legendaire Excalibur	Amy Stake			
+échafaud pour Peinture	Bibliothèque	Katana	Amy Stake			
+échafaud pour Peinture	Bibliothèque	Tronçonneuse	Amy Stake			
+échafaud pour Peinture	Bibliothèque	Dague	Amy Stake			
+Bibliothèque	Bibliothèque	Buste de Tim Berners Lee	Amy Stake			
+Bibliothèque	Bibliothèque	Pied de Biche	Amy Stake			
+Bibliothèque	Bibliothèque	Epee Legendaire Excalibur	Amy Stake			
+Bibliothèque	Bibliothèque	Katana	Amy Stake			
+Bibliothèque	Bibliothèque	Tronçonneuse	Amy Stake			
+Bibliothèque	Bibliothèque	Dague	Amy Stake			
+Cuisine	Bibliothèque	Buste de Tim Berners Lee	Amy Stake			
+Cuisine	Bibliothèque	Pied de Biche	Amy Stake			
+Cuisine	Bibliothèque	Epee Legendaire Excalibur	Amy Stake			
+Cuisine	Bibliothèque	Katana	Amy Stake			
+Cuisine	Bibliothèque	Tronçonneuse	Amy Stake			
+Cuisine	Bibliothèque	Dague	Amy Stake			
+coin Cheminee	Bibliothèque	Buste de Tim Berners Lee	Amy Stake			
+coin Cheminee	Bibliothèque	Pied de Biche	Amy Stake			
+coin Cheminee	Bibliothèque	Epee Legendaire Excalibur	Amy Stake			
+coin Cheminee	Bibliothèque	Katana	Amy Stake			
+coin Cheminee	Bibliothèque	Tronçonneuse	Amy Stake			
+coin Cheminee	Bibliothèque	Dague	Amy Stake			
+Dance Floor		Nokia 3310	Ella Dron			Salon
+Dance Floor		Alcool à brûler	Ella Dron			Salon
+Dance Floor		L'Assomoir d'Emile ZOla	Ella Dron			Salon
+Dance Floor		Peluche de Requin	Ella Dron			Salon
+Dance Floor		Peroxyde d'Hydrogène	Ella Dron			Salon
+Dance Floor		Dague	Ella Dron			Salon
+Dance Floor		Poignard	Ella Dron			Salon
+Chambre	Chambre	Nokia 3310	Ann Geber			
+Chambre	Chambre	Ballon ovale dégonflé	Ann Geber			
+Chambre	Chambre	Lance	Ann Geber			
+Chambre	Chambre	Scie Sauteuse	Ann Geber			
+Chambre	Chambre	Epee Legendaire Excalibur	Ann Geber			
+Chambre	Chambre	Peluche de Requin	Ann Geber			
+Chambre	Chambre	Katana	Ann Geber			
+Chambre	Chambre	Tronçonneuse	Ann Geber			
+Chambre	Chambre	Bouteille en sucre	Ann Geber			
+Chambre	Chambre	Glaive	Ann Geber			
+Chambre	Chambre	Mort au rats	Ann Geber			
+Chambre	Chambre	Poignard	Ann Geber			
+coin Cheminee	Chambre	Nokia 3310	Ann Geber			
+coin Cheminee	Chambre	Ballon ovale dégonflé	Ann Geber			
+coin Cheminee	Chambre	Lance	Ann Geber			
+coin Cheminee	Chambre	Scie Sauteuse	Ann Geber			
+coin Cheminee	Chambre	Epee Legendaire Excalibur	Ann Geber			
+coin Cheminee	Chambre	Peluche de Requin	Ann Geber			
+coin Cheminee	Chambre	Katana	Ann Geber			
+coin Cheminee	Chambre	Tronçonneuse	Ann Geber			
+coin Cheminee	Chambre	Bouteille en sucre	Ann Geber			
+coin Cheminee	Chambre	Glaive	Ann Geber			
+coin Cheminee	Chambre	Mort au rats	Ann Geber			
+coin Cheminee	Chambre	Poignard	Ann Geber			
+Serre	Home Cinema	Revolver Python 357	Justin Case			
+Serre	Home Cinema	Scie Sauteuse	Justin Case			
+Serre	Home Cinema	Acide Fluoro-Antimonique	Justin Case			
+Serre	Home Cinema	cyanure	Justin Case			
+Serre	Home Cinema	L'Assomoir d'Emile ZOla	Justin Case			
+Serre	Home Cinema	Peluche de Requin	Justin Case			
+Home Cinema	Home Cinema	Revolver Python 357	Justin Case			
+Home Cinema	Home Cinema	Scie Sauteuse	Justin Case			
+Home Cinema	Home Cinema	Acide Fluoro-Antimonique	Justin Case			
+Home Cinema	Home Cinema	cyanure	Justin Case			
+Home Cinema	Home Cinema	L'Assomoir d'Emile ZOla	Justin Case			
+Home Cinema	Home Cinema	Peluche de Requin	Justin Case			
+espace de Restauration	Home Cinema	Revolver Python 357	Justin Case			
+espace de Restauration	Home Cinema	Scie Sauteuse	Justin Case			
+espace de Restauration	Home Cinema	Acide Fluoro-Antimonique	Justin Case			
+espace de Restauration	Home Cinema	cyanure	Justin Case			
+espace de Restauration	Home Cinema	L'Assomoir d'Emile ZOla	Justin Case			
+espace de Restauration	Home Cinema	Peluche de Requin	Justin Case			
+Dressing	Home Cinema	Revolver Python 357	Justin Case			
+Dressing	Home Cinema	Scie Sauteuse	Justin Case			
+Dressing	Home Cinema	Acide Fluoro-Antimonique	Justin Case			
+Dressing	Home Cinema	cyanure	Justin Case			
+Dressing	Home Cinema	L'Assomoir d'Emile ZOla	Justin Case			
+Dressing	Home Cinema	Peluche de Requin	Justin Case			
+Cuisine	Home Cinema	Revolver Python 357	Justin Case			
+Cuisine	Home Cinema	Scie Sauteuse	Justin Case			
+Cuisine	Home Cinema	Acide Fluoro-Antimonique	Justin Case			
+Cuisine	Home Cinema	cyanure	Justin Case			
+Cuisine	Home Cinema	L'Assomoir d'Emile ZOla	Justin Case			
+Cuisine	Home Cinema	Peluche de Requin	Justin Case			
+coin Cheminee	Home Cinema	Revolver Python 357	Justin Case			
+coin Cheminee	Home Cinema	Scie Sauteuse	Justin Case			
+coin Cheminee	Home Cinema	Acide Fluoro-Antimonique	Justin Case			
+coin Cheminee	Home Cinema	cyanure	Justin Case			
+coin Cheminee	Home Cinema	L'Assomoir d'Emile ZOla	Justin Case			
+coin Cheminee	Home Cinema	Peluche de Requin	Justin Case			

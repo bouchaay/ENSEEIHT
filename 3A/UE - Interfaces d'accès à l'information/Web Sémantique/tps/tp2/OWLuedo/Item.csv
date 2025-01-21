@@ -1,0 +1,30 @@
+Name	type	locatedIn	Density	isCentreOf
+cyanure	produitEnPoudre	Home Cinema		
+curry	produitEnPoudre	Piece exposition Lego		
+Lance	objetTranchant	Dressing		
+Scie Sauteuse	objetTranchant	Chambre		
+Epee Legendaire Excalibur	objetTranchant	Piece exposition Lego		
+Katana	objetTranchant	Dressing		
+Hachoir de Cuisine	objetTranchant	Cuisine		
+Tronçonneuse	objetTranchant	Chambre		
+Dague	objetTranchant	Atelier		
+Glaive	objetTranchant	Dressing		
+Poignard	objetTranchant	Piece exposition Lego		
+Ballon ovale dégonflé	objetMou	Salon		
+oreiller	objetMou	Bibliothèque		
+Peluche de Requin	objetMou	Piece exposition Lego		
+Formol	produitLiquide	Bibliothèque		
+Peroxyde d'Hydrogène	produitLiquide	Salon		
+Nokia 3310	objetContondant	Serre		
+Buste de Tim Berners Lee	objetContondant	Home Cinema		
+Penny Géant	objetContondant	Bibliothèque		
+Pied de Biche	objetContondant	Salon		
+L'Assomoir d'Emile ZOla	objetContondant	Atelier		
+Bouteille en sucre	objetContondant	Salon		
+Revolver Python 357	armeAFeu	Dressing		
+Boule Disco	objetImmobile			Dance Floor
+Peinture Murale	objetImmobile			
+Alcool à brûler	produit	Bibliothèque	0.9	
+Acide Fluoro-Antimonique	produit	Serre	2.36	
+café	produit	Salon	4.0	
+Mort au rats	produit	Serre	2.6	

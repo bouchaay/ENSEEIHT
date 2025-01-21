@@ -1,0 +1,14 @@
+o	neighbouringRoom	subZone	containsPerson	containsItem
+Salon	Home Cinema	espace de Restauration		
+Salon	Home Cinema	Dance Floor		
+Salon	Piece exposition Lego	espace de Restauration		
+Salon	Piece exposition Lego	Dance Floor		
+Serre				
+Home Cinema				
+Chambre		coin Cheminee		
+Bibliothèque	Chambre			
+Bibliothèque	Cuisine			
+Piece exposition Lego	Salon			
+Dressing			Jango Tham	
+Atelier	Dressing			Peinture Murale
+Cuisine				

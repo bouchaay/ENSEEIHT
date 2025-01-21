@@ -1,0 +1,26 @@
+produit_a_pour_densité
+a_été_morte_depuis
+estCentreDe
+est_actuellement_dans_la_place
+est_ou_a_été_dans_la_place
+floorContientPièce
+maison_contient_étage
+organise_autour
+contient_zone
+estActuellementEnPossessionDe
+estOuAÉtéEnPossessionDe
+product
+soft
+blunt
+sharp
+floor
+firearm
+zone
+liquid
+powder
+Serre
+LaSerre
+Ana Conda
+Bibliothèque
+premier étage
+Omar Tyr

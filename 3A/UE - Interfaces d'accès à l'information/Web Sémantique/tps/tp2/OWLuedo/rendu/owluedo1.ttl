@@ -1,0 +1,1430 @@
+@prefix : <http://www.lamaisondumeurtre.fr/BC#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix www: <http://www.lamaisondumeurtre.fr#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cluedonto: <https://w3id.org/cluedo4KG/onto#> .
+@base <http://www.lamaisondumeurtre.fr/BC#> .
+
+<https://w3id.org/cluedo4KG/onto> rdf:type owl:Ontology ;
+                                   <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> ;
+                                   <http://purl.org/dc/terms/creator> "Camille Pradel" ,
+                                                                      "Nathalie Hernandez" ;
+                                   <http://purl.org/dc/terms/issued> "2012-12-01"^^xsd:date ;
+                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "cluedonto" ;
+                                   <http://purl.org/vocab/vann/preferredNamespaceUri> cluedonto: ;
+                                   rdfs:comment "Cette ontologie a été créée pour être utilisée dans le tutoriel SPARQLUEDO faisant partie de la ressource CLUEDO4KG"@fr ,
+                                                "This ontology was created for use in the SPARQLUEDO tutorial, which is part of the CLUEDO4KG resource."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#aPourPieceVoisine
+:aPourPieceVoisine rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#a_été_morte_depuis
+:a_été_morte_depuis rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#contient_zone
+:contient_zone rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#estActuellementEnPossessionDe
+:estActuellementEnPossessionDe rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#estCentreDe
+:estCentreDe rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#estOuAÉtéEnPossessionDe
+:estOuAÉtéEnPossessionDe rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#estVivant
+:estVivant rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#est_actuellement_dans_la_place
+:est_actuellement_dans_la_place rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#est_ou_a_été_dans_la_place
+:est_ou_a_été_dans_la_place rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#floorContientPièce
+:floorContientPièce rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#maison_contient_étage
+:maison_contient_étage rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#objetDansPiece
+:objetDansPiece rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#organise_autour
+:organise_autour rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#personneDansPiece
+:personneDansPiece rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#pieceContientObjet
+:pieceContientObjet rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#pieceContientPersonne
+:pieceContientPersonne rdf:type owl:AnnotationProperty .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#produit_a_pour_densité
+:produit_a_pour_densité rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/cluedo4KG/onto#:pieceContientPersonne
+<https://w3id.org/cluedo4KG/onto#:pieceContientPersonne> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/cluedo4KG/onto#aPourCauseDeDécès
+cluedonto:aPourCauseDeDécès rdf:type owl:ObjectProperty ;
+                            rdfs:domain cluedonto:victim ;
+                            rdfs:range cluedonto:causeofdeath ;
+                            rdfs:label "a pour cause de décès" .
+
+
+###  https://w3id.org/cluedo4KG/onto#aPourPieceVoisine
+cluedonto:aPourPieceVoisine rdf:type owl:ObjectProperty ,
+                                     owl:SymmetricProperty ,
+                                     owl:IrreflexiveProperty ;
+                            rdfs:domain cluedonto:Piece ;
+                            rdfs:range cluedonto:Piece ;
+                            rdfs:label "a pour pièce voisine"@fr ,
+                                       "has as neighbour room"@en .
+
+
+###  https://w3id.org/cluedo4KG/onto#aTué
+cluedonto:aTué rdf:type owl:ObjectProperty ;
+               owl:inverseOf cluedonto:aÉtéTuéPar ;
+               rdfs:domain cluedonto:Personne ;
+               rdfs:range cluedonto:victim ;
+               rdfs:label "a tué"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#a_causé_la_mort
+cluedonto:a_causé_la_mort rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf owl:topObjectProperty ;
+                          rdfs:domain cluedonto:causeofdeath ;
+                          rdfs:range cluedonto:victim ;
+                          rdfs:label "a causé la mort"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#aÉtéTuéPar
+cluedonto:aÉtéTuéPar rdf:type owl:ObjectProperty ;
+                     rdfs:domain cluedonto:victim ;
+                     rdfs:range cluedonto:murderer ;
+                     rdfs:label "a été tué par"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#contient_zone
+cluedonto:contient_zone rdf:type owl:ObjectProperty ;
+                        rdfs:domain cluedonto:Piece ;
+                        rdfs:range cluedonto:zone ;
+                        rdfs:label "pièce contient zone"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#estActuellementDansLaPièce
+cluedonto:estActuellementDansLaPièce rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf cluedonto:estOuAÉtéDansLaPièce ;
+                                     rdfs:domain cluedonto:Personne ;
+                                     rdfs:range cluedonto:Piece ;
+                                     rdfs:label "est actuellement dans la pièce"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#estActuellementEnPossessionDe
+cluedonto:estActuellementEnPossessionDe rdf:type owl:ObjectProperty ;
+                                        rdfs:subPropertyOf cluedonto:estOuAÉtéEnPossessionDe ;
+                                        rdfs:domain cluedonto:Personne ;
+                                        rdfs:range cluedonto:Objet ;
+                                        rdfs:label "est actuellement en possession de"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#estCentreDe
+cluedonto:estCentreDe rdf:type owl:ObjectProperty ;
+                      rdfs:domain cluedonto:Objet ;
+                      rdfs:range cluedonto:zone .
+
+
+###  https://w3id.org/cluedo4KG/onto#estOuAÉtéDansLaPièce
+cluedonto:estOuAÉtéDansLaPièce rdf:type owl:ObjectProperty ;
+                               rdfs:subPropertyOf cluedonto:est_ou_a_été_dans_la_place ;
+                               rdfs:domain cluedonto:Personne ;
+                               rdfs:range cluedonto:Piece ;
+                               rdfs:label "est ou a été dans la pièce"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#estOuAÉtéEnPossessionDe
+cluedonto:estOuAÉtéEnPossessionDe rdf:type owl:ObjectProperty ;
+                                  rdfs:domain cluedonto:Personne ;
+                                  rdfs:range cluedonto:Objet ;
+                                  rdfs:label "est ou a été en possession de"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#est_actuellement_dans_la_place
+cluedonto:est_actuellement_dans_la_place rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf cluedonto:est_ou_a_été_dans_la_place ;
+                                         rdfs:domain cluedonto:Personne ;
+                                         rdfs:range cluedonto:place ;
+                                         rdfs:label "est actuellement dans la place"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#est_attribuable_à_objet_mobile
+cluedonto:est_attribuable_à_objet_mobile rdf:type owl:ObjectProperty ;
+                                         rdfs:subPropertyOf cluedonto:aPourCauseDeDécès ;
+                                         owl:inverseOf cluedonto:objet_mobile_attribué_à ;
+                                         rdf:type owl:InverseFunctionalProperty ;
+                                         rdfs:domain cluedonto:causeofdeath ;
+                                         rdfs:range cluedonto:mobile ;
+                                         rdfs:label "est attribuable à objet mobile" .
+
+
+###  https://w3id.org/cluedo4KG/onto#est_ou_a_été_dans_la_place
+cluedonto:est_ou_a_été_dans_la_place rdf:type owl:ObjectProperty ;
+                                     rdfs:domain cluedonto:Personne ;
+                                     rdfs:range cluedonto:place ;
+                                     owl:propertyChainAxiom ( cluedonto:est_ou_a_été_dans_la_place
+                                                              cluedonto:contient_zone
+                                                            ) ,
+                                                            ( cluedonto:est_ou_a_été_dans_la_place
+                                                              cluedonto:floorContientPièce
+                                                            ) ,
+                                                            ( cluedonto:est_ou_a_été_dans_la_place
+                                                              cluedonto:maison_contient_étage
+                                                            ) ;
+                                     rdfs:label "est ou a été dans la place"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#floorContientPièce
+cluedonto:floorContientPièce rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf cluedonto:locatedIn ;
+                             owl:inverseOf cluedonto:pièce_dans_floor ;
+                             rdfs:domain cluedonto:floor ;
+                             rdfs:range cluedonto:Piece ;
+                             rdfs:label "étage contient pièce"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#floor_dans_maison
+cluedonto:floor_dans_maison rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf cluedonto:locatedIn ;
+                            owl:inverseOf cluedonto:maison_contient_étage ;
+                            rdfs:domain cluedonto:floor ;
+                            rdfs:range cluedonto:Maison ;
+                            rdfs:label "étage dans maison"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#locatedIn
+cluedonto:locatedIn rdf:type owl:ObjectProperty ,
+                             owl:TransitiveProperty ;
+                    rdfs:domain cluedonto:place ;
+                    rdfs:range cluedonto:place ;
+                    rdfs:label "place dans place"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#maisonContientPiece
+cluedonto:maisonContientPiece rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf cluedonto:locatedIn ;
+                              owl:inverseOf cluedonto:pieceDansMaison ;
+                              rdfs:domain cluedonto:Maison ;
+                              rdfs:range cluedonto:Piece ;
+                              rdfs:label "house contains room"@en ,
+                                         "maison contient pièce"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#maison_contient_étage
+cluedonto:maison_contient_étage rdf:type owl:ObjectProperty ;
+                                rdfs:subPropertyOf cluedonto:locatedIn ;
+                                rdfs:domain cluedonto:Maison ;
+                                rdfs:range cluedonto:floor ;
+                                rdfs:label "maison contient étage"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#objetDansPiece
+cluedonto:objetDansPiece rdf:type owl:ObjectProperty ;
+                         owl:inverseOf cluedonto:pieceContientObjet ;
+                         rdfs:domain cluedonto:Objet ;
+                         rdfs:range cluedonto:Piece ;
+                         rdfs:label "object in room"@en ,
+                                    "objet dans pièce"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#objet_mobile_attribué_à
+cluedonto:objet_mobile_attribué_à rdf:type owl:ObjectProperty ;
+                                  rdfs:label "objet mobile attribué à"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#organise_autour
+cluedonto:organise_autour rdf:type owl:ObjectProperty ;
+                          rdfs:domain cluedonto:zone ;
+                          rdfs:range cluedonto:immobile ;
+                          rdfs:label "organisé autour"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#personneDansPiece
+cluedonto:personneDansPiece rdf:type owl:ObjectProperty ;
+                            owl:inverseOf cluedonto:pieceContientPersonne ;
+                            rdfs:domain cluedonto:Personne ;
+                            rdfs:range cluedonto:Piece ;
+                            owl:propertyChainAxiom ( cluedonto:estActuellementEnPossessionDe
+                                                     cluedonto:objetDansPiece
+                                                   ) ;
+                            rdfs:label "person in room"@en ,
+                                       "personne dans pièce"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#pieceContientObjet
+cluedonto:pieceContientObjet rdf:type owl:ObjectProperty ;
+                             rdfs:domain cluedonto:Piece ;
+                             rdfs:range cluedonto:Objet ;
+                             owl:propertyChainAxiom ( cluedonto:contient_zone
+                                                      cluedonto:organise_autour
+                                                    ) ;
+                             rdfs:label "pièce contient objet"@fr ,
+                                        "room contains object"@en .
+
+
+###  https://w3id.org/cluedo4KG/onto#pieceContientPersonne
+cluedonto:pieceContientPersonne rdf:type owl:ObjectProperty ;
+                                rdfs:domain cluedonto:Piece ;
+                                rdfs:range cluedonto:Personne ;
+                                rdfs:label "pièce contient personne"@fr ,
+                                           "room contains person"@en .
+
+
+###  https://w3id.org/cluedo4KG/onto#pieceDansMaison
+cluedonto:pieceDansMaison rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf cluedonto:locatedIn ;
+                          rdfs:domain cluedonto:place ;
+                          rdfs:range cluedonto:place ;
+                          rdfs:label "pièce dans maison"@fr ,
+                                     "room in house"@en .
+
+
+###  https://w3id.org/cluedo4KG/onto#pièce_dans_floor
+cluedonto:pièce_dans_floor rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf cluedonto:locatedIn ;
+                           rdfs:domain cluedonto:Piece ;
+                           rdfs:range cluedonto:floor ;
+                           rdfs:label "pièce dans étage"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#utilisé_pour_tuer
+cluedonto:utilisé_pour_tuer rdf:type owl:ObjectProperty ;
+                            rdfs:domain cluedonto:Objet ;
+                            rdfs:range cluedonto:Personne ;
+                            rdfs:label "utilisé pour tuer"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#victime_dans_lieu_du_crime
+cluedonto:victime_dans_lieu_du_crime rdf:type owl:ObjectProperty ;
+                                     rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/cluedo4KG/onto#a_été_morte_depuis
+cluedonto:a_été_morte_depuis rdf:type owl:DatatypeProperty ;
+                             rdfs:domain cluedonto:victim ;
+                             rdfs:range xsd:int ;
+                             rdfs:label "a été morte depuis"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#estVivant
+cluedonto:estVivant rdf:type owl:DatatypeProperty ;
+                    rdfs:domain cluedonto:Personne ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "indicates whether a person is alive (True) or dead (False)"@en ,
+                                 "indique si une personne est vivante (True) ou morte (False)"@fr ;
+                    rdfs:label "est vivant"@fr ,
+                               "is alive"@en .
+
+
+###  https://w3id.org/cluedo4KG/onto#produit_a_pour_densité
+cluedonto:produit_a_pour_densité rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain cluedonto:product ;
+                                 rdfs:range xsd:float ;
+                                 rdfs:label "produit a pour densité"@fr .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/cluedo4KG/onto#Maison
+cluedonto:Maison rdf:type owl:Class ;
+                 rdfs:subClassOf cluedonto:place ;
+                 owl:disjointWith cluedonto:floor ;
+                 rdfs:comment "house"@en ;
+                 rdfs:label "maison"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#Objet
+cluedonto:Objet rdf:type owl:Class ;
+                rdfs:label "object"@en ,
+                           "objet"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#Personne
+cluedonto:Personne rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Class ;
+                                     owl:unionOf ( cluedonto:innocent
+                                                   cluedonto:murderer
+                                                   cluedonto:victim
+                                                 )
+                                   ] ;
+                   rdfs:label "person"@en ,
+                              "personne"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#Piece
+cluedonto:Piece rdf:type owl:Class ;
+                rdfs:subClassOf cluedonto:place ;
+                owl:disjointWith cluedonto:floor ;
+                rdfs:label "pièce"@fr ,
+                           "room"@en .
+
+
+###  https://w3id.org/cluedo4KG/onto#assassin
+cluedonto:assassin rdf:type owl:Class ;
+                   rdfs:subClassOf cluedonto:murderer ;
+                   owl:disjointWith cluedonto:killer .
+
+
+###  https://w3id.org/cluedo4KG/onto#blunt
+cluedonto:blunt rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty cluedonto:objet_mobile_attribué_à ;
+                                      owl:someValuesFrom cluedonto:bluntObjectInjury
+                                    ] ;
+                rdfs:subClassOf cluedonto:weapon ;
+                rdfs:label "contondant"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#bluntObjectInjury
+cluedonto:bluntObjectInjury rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty cluedonto:est_attribuable_à_objet_mobile ;
+                                                  owl:someValuesFrom cluedonto:blunt
+                                                ] ;
+                            rdfs:subClassOf cluedonto:injury ;
+                            rdfs:label "blessure par objet contondant"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#bulletInjury
+cluedonto:bulletInjury rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty cluedonto:a_causé_la_mort ;
+                                             owl:someValuesFrom cluedonto:tué_par_balle
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty cluedonto:est_attribuable_à_objet_mobile ;
+                                             owl:someValuesFrom cluedonto:firearm
+                                           ] ;
+                       rdfs:subClassOf cluedonto:injury ;
+                       rdfs:label "blessure par balle"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#causeofdeath
+cluedonto:causeofdeath rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Restriction ;
+                                             owl:onProperty cluedonto:a_causé_la_mort ;
+                                             owl:someValuesFrom cluedonto:victim
+                                           ] ;
+                       rdfs:label "cause de la mort"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#drowning
+cluedonto:drowning rdf:type owl:Class ;
+                   rdfs:subClassOf cluedonto:causeofdeath ;
+                   rdfs:label "noyade"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#firearm
+cluedonto:firearm rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty cluedonto:objet_mobile_attribué_à ;
+                                        owl:someValuesFrom cluedonto:bulletInjury
+                                      ] ;
+                  rdfs:subClassOf cluedonto:weapon ;
+                  rdfs:label "arme à feu"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#floor
+cluedonto:floor rdf:type owl:Class ;
+                rdfs:subClassOf cluedonto:place ;
+                rdfs:label "étage"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#immobile
+cluedonto:immobile rdf:type owl:Class ;
+                   rdfs:subClassOf cluedonto:Objet .
+
+
+###  https://w3id.org/cluedo4KG/onto#injury
+cluedonto:injury rdf:type owl:Class ;
+                 rdfs:subClassOf cluedonto:causeofdeath ;
+                 rdfs:label "blessure"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#innocent
+cluedonto:innocent rdf:type owl:Class ;
+                   rdfs:subClassOf cluedonto:Personne .
+
+
+###  https://w3id.org/cluedo4KG/onto#killer
+cluedonto:killer rdf:type owl:Class ;
+                 rdfs:subClassOf cluedonto:murderer ;
+                 rdfs:label "tueur"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#lieuDuCrime
+cluedonto:lieuDuCrime rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty cluedonto:pieceContientPersonne ;
+                                            owl:someValuesFrom cluedonto:victim
+                                          ] ;
+                      rdfs:subClassOf cluedonto:Piece ;
+                      rdfs:label "lieu du crime"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#liquid
+cluedonto:liquid rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty cluedonto:produit_a_pour_densité ;
+                                       owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:float ;
+                                                            owl:withRestrictions ( [ xsd:maxExclusive "2.5"^^xsd:float
+                                                                                   ]
+                                                                                 )
+                                                          ]
+                                     ] ;
+                 rdfs:subClassOf cluedonto:product ;
+                 owl:disjointWith cluedonto:powder ;
+                 rdfs:label "liquide"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#mobile
+cluedonto:mobile rdf:type owl:Class ;
+                 rdfs:subClassOf cluedonto:Objet .
+
+
+###  https://w3id.org/cluedo4KG/onto#murderer
+cluedonto:murderer rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                owl:onProperty cluedonto:estOuAÉtéEnPossessionDe ;
+                                                                owl:someValuesFrom cluedonto:firearm
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty cluedonto:est_ou_a_été_dans_la_place ;
+                                                                owl:someValuesFrom cluedonto:lieuDuCrime
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty cluedonto:aTué ;
+                                         owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onClass cluedonto:Personne
+                                       ] ;
+                   rdfs:subClassOf cluedonto:Personne ;
+                   rdfs:label "Murderer"@en ,
+                              "meurtrier"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#place
+cluedonto:place rdf:type owl:Class .
+
+
+###  https://w3id.org/cluedo4KG/onto#poisoning
+cluedonto:poisoning rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty cluedonto:est_attribuable_à_objet_mobile ;
+                                          owl:someValuesFrom cluedonto:product
+                                        ] ;
+                    rdfs:subClassOf cluedonto:causeofdeath ;
+                    rdfs:label "empoisonnement"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#powder
+cluedonto:powder rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty cluedonto:produit_a_pour_densité ;
+                                       owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                            owl:onDatatype xsd:float ;
+                                                            owl:withRestrictions ( [ xsd:minExclusive "2.5"^^xsd:float
+                                                                                   ]
+                                                                                 )
+                                                          ]
+                                     ] ;
+                 rdfs:subClassOf cluedonto:product ;
+                 rdfs:label "poudre"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#product
+cluedonto:product rdf:type owl:Class ;
+                  rdfs:subClassOf cluedonto:mobile ,
+                                  [ rdf:type owl:Class ;
+                                    owl:unionOf ( cluedonto:liquid
+                                                  cluedonto:powder
+                                                )
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty cluedonto:produit_a_pour_densité ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onDataRange xsd:int
+                                  ] ;
+                  rdfs:label "produit"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#responsibleForMurder
+cluedonto:responsibleForMurder rdf:type owl:Class ;
+                               owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                     owl:onProperty cluedonto:objet_mobile_attribué_à ;
+                                                     owl:someValuesFrom cluedonto:causeofdeath
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty cluedonto:utilisé_pour_tuer ;
+                                                     owl:someValuesFrom cluedonto:victim
+                                                   ] ;
+                               rdfs:subClassOf cluedonto:Objet ,
+                                               [ rdf:type owl:Class ;
+                                                 owl:unionOf ( cluedonto:immobile
+                                                               cluedonto:mobile
+                                                             )
+                                               ] ;
+                               rdfs:label "reponsable de meurtre"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#sharp
+cluedonto:sharp rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty cluedonto:objet_mobile_attribué_à ;
+                                      owl:someValuesFrom cluedonto:sharpObjectInjury
+                                    ] ;
+                rdfs:subClassOf cluedonto:weapon ;
+                rdfs:label "tranchant"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#sharpObjectInjury
+cluedonto:sharpObjectInjury rdf:type owl:Class ;
+                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                  owl:onProperty cluedonto:est_attribuable_à_objet_mobile ;
+                                                  owl:someValuesFrom cluedonto:sharp
+                                                ] ;
+                            rdfs:subClassOf cluedonto:injury ;
+                            rdfs:label "blessure par objet tranchant"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#soft
+cluedonto:soft rdf:type owl:Class ;
+               rdfs:subClassOf cluedonto:mobile ;
+               rdfs:label "mou"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#tuéAutrement
+cluedonto:tuéAutrement rdf:type owl:Class ;
+                       owl:equivalentClass [ rdf:type owl:Class ;
+                                             owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                             owl:onProperty cluedonto:aPourCauseDeDécès ;
+                                                             owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                  owl:complementOf cluedonto:bulletInjury
+                                                                                ]
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty cluedonto:a_été_morte_depuis ;
+                                                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                  owl:onDatatype xsd:nonNegativeInteger ;
+                                                                                  owl:withRestrictions ( [ xsd:minExclusive "5"^^xsd:nonNegativeInteger
+                                                                                                         ]
+                                                                                                       )
+                                                                                ]
+                                                           ]
+                                                         )
+                                           ] ;
+                       rdfs:subClassOf cluedonto:victim ;
+                       rdfs:label "tué autrement"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#tué_par_balle
+cluedonto:tué_par_balle rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                              owl:onProperty cluedonto:a_été_morte_depuis ;
+                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                   owl:onDatatype xsd:nonNegativeInteger ;
+                                                                   owl:withRestrictions ( [ xsd:maxExclusive "5"^^xsd:nonNegativeInteger
+                                                                                          ]
+                                                                                        )
+                                                                 ]
+                                            ] ;
+                        rdfs:subClassOf cluedonto:victim ;
+                        rdfs:label "tué par balle"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#victim
+cluedonto:victim rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty cluedonto:aPourCauseDeDécès ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass cluedonto:causeofdeath
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty cluedonto:aÉtéTuéPar ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onClass cluedonto:murderer
+                                     ] ;
+                 rdfs:subClassOf cluedonto:Personne ,
+                                 [ rdf:type owl:Class ;
+                                   owl:unionOf ( cluedonto:tuéAutrement
+                                                 cluedonto:tué_par_balle
+                                               )
+                                 ] ;
+                 rdfs:label "victime"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#weapon
+cluedonto:weapon rdf:type owl:Class ;
+                 rdfs:subClassOf cluedonto:mobile ;
+                 rdfs:label "arme"@fr .
+
+
+###  https://w3id.org/cluedo4KG/onto#zone
+cluedonto:zone rdf:type owl:Class ;
+               rdfs:subClassOf cluedonto:place ;
+               rdfs:label "espace"@fr .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.lamaisondumeurtre.fr#2eme_Etage
+<http://www.lamaisondumeurtre.fr#2eme_Etage> rdf:type owl:NamedIndividual ,
+                                                      cluedonto:floor ;
+                                             cluedonto:floorContientPièce :Atelier ,
+                                                                          :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla
+<http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> rdf:type owl:NamedIndividual ,
+                                                                   cluedonto:blunt ;
+                                                          cluedonto:objetDansPiece :Atelier .
+
+
+###  http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène
+<http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> rdf:type owl:NamedIndividual ,
+                                                                cluedonto:liquid ;
+                                                       cluedonto:objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Acide_Fluoro-Antimonique
+:Acide_Fluoro-Antimonique rdf:type owl:NamedIndividual ,
+                                   cluedonto:product ;
+                          cluedonto:objetDansPiece :Serre ;
+                          cluedonto:produit_a_pour_densité "2.36"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Alcool_à_brûler
+:Alcool_à_brûler rdf:type owl:NamedIndividual ,
+                          cluedonto:product ;
+                 cluedonto:objetDansPiece :Conda ;
+                 cluedonto:produit_a_pour_densité "0.9"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Amy_Stake
+:Amy_Stake rdf:type owl:NamedIndividual ,
+                    cluedonto:Personne ;
+           cluedonto:estOuAÉtéEnPossessionDe :Buste_de_Tim_Berners_Lee ,
+                                             :Dague ,
+                                             :Epee_Legendaire_Excalibur ,
+                                             :Katana ,
+                                             :Pied_de_Biche ,
+                                             :Tronçonneuse ;
+           cluedonto:est_ou_a_été_dans_la_place :Conda ,
+                                                :Cuisine ,
+                                                :coin_Cheminee ,
+                                                :espace_de_Restauration ,
+                                                :échafaud_pour_Peinture ;
+           cluedonto:personneDansPiece :Conda ;
+           rdfs:label "Amy Stake" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#An
+:An rdf:type owl:NamedIndividual ,
+             cluedonto:Personne ;
+    cluedonto:estOuAÉtéEnPossessionDe :Formol ,
+                                      :Katana ,
+                                      :Penny_Géant ,
+                                      :Revolver_Python_357 ,
+                                      :oreiller ;
+    cluedonto:est_actuellement_dans_la_place :Bibliothèque ;
+    cluedonto:est_ou_a_été_dans_la_place :Atelier ,
+                                         :Chambre ,
+                                         :Conda ,
+                                         :Salon ,
+                                         :échafaud_pour_Peinture ;
+    cluedonto:personneDansPiece :Conda ;
+    rdfs:label "Ana Conda" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Ann_Geber
+:Ann_Geber rdf:type owl:NamedIndividual ,
+                    cluedonto:Personne ;
+           cluedonto:estOuAÉtéEnPossessionDe :Ballon_ovale_dégonflé ,
+                                             :Bouteille_en_sucre ,
+                                             :Epee_Legendaire_Excalibur ,
+                                             :Glaive ,
+                                             :Katana ,
+                                             :Lance ,
+                                             :Mort_au_rats ,
+                                             :Nokia_3310 ,
+                                             :Peluche_de_Requin ,
+                                             :Poignard ,
+                                             :Scie_Sauteuse ,
+                                             :Tronçonneuse ;
+           cluedonto:est_ou_a_été_dans_la_place :Chambre ,
+                                                :coin_Cheminee ;
+           cluedonto:personneDansPiece :Chambre ;
+           rdfs:label "Ann Geber" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Atelier
+:Atelier rdf:type owl:NamedIndividual ,
+                  cluedonto:Piece ;
+         cluedonto:aPourPieceVoisine :Dressing ;
+         cluedonto:pieceContientObjet :Peinture_Murale .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Ballon_ovale_dégonflé
+:Ballon_ovale_dégonflé rdf:type owl:NamedIndividual ,
+                                cluedonto:soft ;
+                       cluedonto:objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Bertha_Bassez
+:Bertha_Bassez rdf:type owl:NamedIndividual ,
+                        cluedonto:Personne ;
+               cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ,
+                                                 :Alcool_à_brûler ,
+                                                 :Bouteille_en_sucre ,
+                                                 :Dague ,
+                                                 :Epee_Legendaire_Excalibur ,
+                                                 :Glaive ,
+                                                 :Lance ,
+                                                 :Nokia_3310 ,
+                                                 :Pied_de_Biche ,
+                                                 :Scie_Sauteuse ,
+                                                 :Tronçonneuse ;
+               cluedonto:est_ou_a_été_dans_la_place :Atelier ,
+                                                    :Dressing ,
+                                                    :Serre ,
+                                                    :coin_Cheminee ,
+                                                    :échafaud_pour_Peinture ;
+               cluedonto:personneDansPiece :Chambre ;
+               rdfs:label "Bertha Bassez" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Bibliothèque
+:Bibliothèque rdf:type owl:NamedIndividual ,
+                       cluedonto:floor ;
+              cluedonto:floorContientPièce :Chambre ,
+                                           :Conda ,
+                                           :Cuisine .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Boule_Disco
+:Boule_Disco rdf:type owl:NamedIndividual ,
+                      cluedonto:immobile ;
+             cluedonto:estCentreDe :Dance_Floor .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Bouteille_en_sucre
+:Bouteille_en_sucre rdf:type owl:NamedIndividual ,
+                             cluedonto:blunt ;
+                    cluedonto:objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Buste_de_Tim_Berners_Lee
+:Buste_de_Tim_Berners_Lee rdf:type owl:NamedIndividual ,
+                                   cluedonto:blunt ;
+                          cluedonto:objetDansPiece :Home_Cinema .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Chambre
+:Chambre rdf:type owl:NamedIndividual ,
+                  cluedonto:Piece ;
+         cluedonto:contient_zone :coin_Cheminee .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Conda
+:Conda rdf:type owl:NamedIndividual ,
+                cluedonto:Piece ;
+       cluedonto:aPourPieceVoisine :Chambre ,
+                                   :Cuisine .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Cuisine
+:Cuisine rdf:type owl:NamedIndividual ,
+                  cluedonto:Piece .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Dague
+:Dague rdf:type owl:NamedIndividual ,
+                cluedonto:sharp ;
+       cluedonto:objetDansPiece :Atelier .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Dance_Floor
+:Dance_Floor rdf:type owl:NamedIndividual ,
+                      cluedonto:zone .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Dressing
+:Dressing rdf:type owl:NamedIndividual ,
+                   cluedonto:Piece ;
+          <https://w3id.org/cluedo4KG/onto#:pieceContientPersonne> :Jango_Tham .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Ella_Dron
+:Ella_Dron rdf:type owl:NamedIndividual ,
+                    cluedonto:Personne ;
+           cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ,
+                                             <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ,
+                                             :Alcool_à_brûler ,
+                                             :Dague ,
+                                             :Nokia_3310 ,
+                                             :Peluche_de_Requin ,
+                                             :Poignard ;
+           cluedonto:est_actuellement_dans_la_place :Salon ;
+           cluedonto:est_ou_a_été_dans_la_place :Dance_Floor ;
+           rdfs:label "Ella Dron" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Epee_Legendaire_Excalibur
+:Epee_Legendaire_Excalibur rdf:type owl:NamedIndividual ,
+                                    cluedonto:sharp ;
+                           cluedonto:objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Formol
+:Formol rdf:type owl:NamedIndividual ,
+                 cluedonto:liquid ;
+        cluedonto:objetDansPiece :Conda .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Glaive
+:Glaive rdf:type owl:NamedIndividual ,
+                 cluedonto:sharp ;
+        cluedonto:objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Hachoir_de_Cuisine
+:Hachoir_de_Cuisine rdf:type owl:NamedIndividual ,
+                             cluedonto:sharp ;
+                    cluedonto:objetDansPiece :Cuisine .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Home_Cinema
+:Home_Cinema rdf:type owl:NamedIndividual ,
+                      cluedonto:Piece .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Jango_Tham
+:Jango_Tham rdf:type owl:NamedIndividual ,
+                     cluedonto:Personne ;
+            cluedonto:estActuellementEnPossessionDe :Revolver_Python_357 ;
+            cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ,
+                                              :Alcool_à_brûler ,
+                                              :Epee_Legendaire_Excalibur ,
+                                              :Formol ,
+                                              :Glaive ,
+                                              :Peluche_de_Requin ,
+                                              :Penny_Géant ,
+                                              :Tronçonneuse ,
+                                              :café ,
+                                              :curry ,
+                                              :cyanure ;
+            cluedonto:est_ou_a_été_dans_la_place :Dance_Floor ,
+                                                 :Dressing ,
+                                                 :Piece_exposition_Lego ;
+            rdfs:label "Jango Tham" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Jean_Neymar
+:Jean_Neymar rdf:type owl:NamedIndividual ,
+                      cluedonto:Personne ;
+             cluedonto:estOuAÉtéEnPossessionDe :Alcool_à_brûler ,
+                                               :Ballon_ovale_dégonflé ,
+                                               :Hachoir_de_Cuisine ,
+                                               :Katana ,
+                                               :Poignard ,
+                                               :Tronçonneuse ,
+                                               :café ,
+                                               :curry ;
+             cluedonto:est_ou_a_été_dans_la_place :Atelier ,
+                                                  :coin_Cheminee ;
+             cluedonto:personneDansPiece :Atelier ;
+             rdfs:label "Jean Neymar" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Justin_Case
+:Justin_Case rdf:type owl:NamedIndividual ,
+                      cluedonto:Personne ;
+             cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ,
+                                               :Acide_Fluoro-Antimonique ,
+                                               :Peluche_de_Requin ,
+                                               :Revolver_Python_357 ,
+                                               :Scie_Sauteuse ,
+                                               :cyanure ;
+             cluedonto:est_ou_a_été_dans_la_place :Cuisine ,
+                                                  :Dressing ,
+                                                  :Home_Cinema ,
+                                                  :Serre ,
+                                                  :coin_Cheminee ,
+                                                  :espace_de_Restauration ;
+             cluedonto:personneDansPiece :Home_Cinema ;
+             rdfs:label "Justin Case" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Katana
+:Katana rdf:type owl:NamedIndividual ,
+                 cluedonto:sharp ;
+        cluedonto:objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#LaSerre
+:LaSerre rdf:type owl:NamedIndividual ,
+                  cluedonto:floor ;
+         cluedonto:floorContientPièce :Serre .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Lance
+:Lance rdf:type owl:NamedIndividual ,
+                cluedonto:sharp ;
+       cluedonto:objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Lena_Ture
+:Lena_Ture rdf:type owl:NamedIndividual ,
+                    cluedonto:Personne ;
+           cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ,
+                                             :Hachoir_de_Cuisine ,
+                                             :Mort_au_rats ,
+                                             :Pied_de_Biche ,
+                                             :oreiller ;
+           cluedonto:est_ou_a_été_dans_la_place :Dance_Floor ,
+                                                :Dressing ,
+                                                :Salon ,
+                                                :Serre ;
+           cluedonto:personneDansPiece :Serre ;
+           rdfs:label "Lena Ture" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Manoir_Tamanoir
+:Manoir_Tamanoir rdf:type owl:NamedIndividual ,
+                          cluedonto:Maison ;
+                 cluedonto:maison_contient_étage <http://www.lamaisondumeurtre.fr#2eme_Etage> ,
+                                                 :Bibliothèque ,
+                                                 :LaSerre ,
+                                                 :RDC .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Marc_Luedo
+:Marc_Luedo rdf:type owl:NamedIndividual ,
+                     cluedonto:Personne ;
+            cluedonto:estOuAÉtéEnPossessionDe :Alcool_à_brûler ,
+                                              :Pied_de_Biche ;
+            cluedonto:est_ou_a_été_dans_la_place :Atelier ,
+                                                 :Cuisine ,
+                                                 :Piece_exposition_Lego ,
+                                                 :coin_Cheminee ,
+                                                 :espace_de_Restauration ;
+            cluedonto:personneDansPiece :Atelier ;
+            rdfs:label "Marc Luedo" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Mort_au_rats
+:Mort_au_rats rdf:type owl:NamedIndividual ,
+                       cluedonto:product ;
+              cluedonto:objetDansPiece :Serre ;
+              cluedonto:produit_a_pour_densité "2.6"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Nokia_3310
+:Nokia_3310 rdf:type owl:NamedIndividual ,
+                     cluedonto:blunt ;
+            cluedonto:objetDansPiece :Serre .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Osama_Najimi
+:Osama_Najimi rdf:type owl:NamedIndividual ,
+                       cluedonto:Personne ;
+              cluedonto:estOuAÉtéEnPossessionDe :oreiller ;
+              cluedonto:est_ou_a_été_dans_la_place :Chambre ,
+                                                   :Conda ,
+                                                   :Dance_Floor ,
+                                                   :Home_Cinema ,
+                                                   :espace_de_Restauration ,
+                                                   :échafaud_pour_Peinture ;
+              cluedonto:personneDansPiece :Salon ;
+              rdfs:label "Osama Najimi" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Oscar_Bone
+:Oscar_Bone rdf:type owl:NamedIndividual ,
+                     cluedonto:Personne ;
+            cluedonto:estOuAÉtéEnPossessionDe :Epee_Legendaire_Excalibur ,
+                                              :Katana ;
+            cluedonto:est_ou_a_été_dans_la_place :Cuisine ,
+                                                 :Home_Cinema ,
+                                                 :Piece_exposition_Lego ,
+                                                 :espace_de_Restauration ;
+            cluedonto:personneDansPiece :Piece_exposition_Lego ;
+            rdfs:label "Oscar Bone" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Peinture_Murale
+:Peinture_Murale rdf:type owl:NamedIndividual ,
+                          cluedonto:immobile .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Peluche_de_Requin
+:Peluche_de_Requin rdf:type owl:NamedIndividual ,
+                            cluedonto:soft ;
+                   cluedonto:objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Penny_Géant
+:Penny_Géant rdf:type owl:NamedIndividual ,
+                      cluedonto:blunt ;
+             cluedonto:objetDansPiece :Conda .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Perla_Madonna
+:Perla_Madonna rdf:type owl:NamedIndividual ,
+                        cluedonto:Personne ;
+               cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ,
+                                                 <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ,
+                                                 :Bouteille_en_sucre ,
+                                                 :Buste_de_Tim_Berners_Lee ,
+                                                 :Epee_Legendaire_Excalibur ,
+                                                 :Glaive ,
+                                                 :café ,
+                                                 :oreiller ;
+               cluedonto:est_ou_a_été_dans_la_place :Atelier ,
+                                                    :coin_Cheminee ;
+               cluedonto:personneDansPiece :Chambre ;
+               rdfs:label "Perla Madonna" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Piece_exposition_Lego
+:Piece_exposition_Lego rdf:type owl:NamedIndividual ,
+                                cluedonto:Piece ;
+                       cluedonto:aPourPieceVoisine :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Pied_de_Biche
+:Pied_de_Biche rdf:type owl:NamedIndividual ,
+                        cluedonto:blunt ;
+               cluedonto:objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Poignard
+:Poignard rdf:type owl:NamedIndividual ,
+                   cluedonto:sharp ;
+          cluedonto:objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Polly_Esther
+:Polly_Esther rdf:type owl:NamedIndividual ,
+                       cluedonto:Personne ;
+              cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ,
+                                                :Acide_Fluoro-Antimonique ,
+                                                :Dague ,
+                                                :Glaive ,
+                                                :Katana ,
+                                                :Nokia_3310 ,
+                                                :Peluche_de_Requin ,
+                                                :Pied_de_Biche ,
+                                                :Poignard ,
+                                                :Scie_Sauteuse ,
+                                                :Tronçonneuse ,
+                                                :café ,
+                                                :curry ;
+              cluedonto:est_ou_a_été_dans_la_place :Dressing ;
+              cluedonto:personneDansPiece :Dressing ;
+              rdfs:label "Polly Esther" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#RDC
+:RDC rdf:type owl:NamedIndividual ,
+              cluedonto:floor ;
+     cluedonto:floorContientPièce :Home_Cinema ,
+                                  :Piece_exposition_Lego ,
+                                  :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Raimond_Tology
+:Raimond_Tology rdf:type owl:NamedIndividual ,
+                         cluedonto:Personne ;
+                cluedonto:estOuAÉtéEnPossessionDe :Buste_de_Tim_Berners_Lee ,
+                                                  :Katana ,
+                                                  :Penny_Géant ,
+                                                  :Tronçonneuse ,
+                                                  :curry ;
+                cluedonto:est_ou_a_été_dans_la_place :Atelier ,
+                                                     :Home_Cinema ,
+                                                     :coin_Cheminee ,
+                                                     :espace_de_Restauration ,
+                                                     :échafaud_pour_Peinture ;
+                cluedonto:personneDansPiece :Salon ;
+                rdfs:label "Raimond Tology" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Revolver_Python_357
+:Revolver_Python_357 rdf:type owl:NamedIndividual ,
+                              cluedonto:firearm ;
+                     owl:sameAs cluedonto:arme_cause ;
+                     cluedonto:objetDansPiece :Dressing .
+
+
+###  https://w3id.org/cluedo4KG/onto#arme_cause
+
+###  http://www.lamaisondumeurtre.fr/BC#Roger_Rienkompri
+:Roger_Rienkompri rdf:type owl:NamedIndividual ,
+                           cluedonto:Personne ;
+                  cluedonto:estOuAÉtéEnPossessionDe :Acide_Fluoro-Antimonique ,
+                                                    :Ballon_ovale_dégonflé ,
+                                                    :Formol ,
+                                                    :Poignard ;
+                  cluedonto:est_ou_a_été_dans_la_place :Dance_Floor ,
+                                                       :Dressing ,
+                                                       :Home_Cinema ,
+                                                       :coin_Cheminee ,
+                                                       :échafaud_pour_Peinture ;
+                  cluedonto:personneDansPiece :Atelier ;
+                  rdfs:label "Roger Rienkompri" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Salon
+:Salon rdf:type owl:NamedIndividual ,
+                cluedonto:Piece ;
+       cluedonto:aPourPieceVoisine :Home_Cinema ,
+                                   :Piece_exposition_Lego ;
+       cluedonto:contient_zone :Dance_Floor ,
+                               :espace_de_Restauration .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Scie_Sauteuse
+:Scie_Sauteuse rdf:type owl:NamedIndividual ,
+                        cluedonto:sharp ;
+               cluedonto:objetDansPiece :Chambre .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Serre
+:Serre rdf:type owl:NamedIndividual ,
+                cluedonto:Piece .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#Tronçonneuse
+:Tronçonneuse rdf:type owl:NamedIndividual ,
+                       cluedonto:sharp ;
+              cluedonto:objetDansPiece :Chambre .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#café
+:café rdf:type owl:NamedIndividual ,
+               cluedonto:product ;
+      cluedonto:objetDansPiece :Salon ;
+      cluedonto:produit_a_pour_densité "4.0"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#coin_Cheminee
+:coin_Cheminee rdf:type owl:NamedIndividual ,
+                        cluedonto:zone .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#curry
+:curry rdf:type owl:NamedIndividual ,
+                cluedonto:powder ;
+       cluedonto:objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#cyanure
+:cyanure rdf:type owl:NamedIndividual ,
+                  cluedonto:powder ;
+         cluedonto:objetDansPiece :Home_Cinema .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#espace_de_Restauration
+:espace_de_Restauration rdf:type owl:NamedIndividual ,
+                                 cluedonto:zone .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#oreiller
+:oreiller rdf:type owl:NamedIndividual ,
+                   cluedonto:soft ;
+          cluedonto:objetDansPiece :Conda .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#premie
+:premie rdf:type owl:NamedIndividual ,
+                 cluedonto:Personne ;
+        cluedonto:estOuAÉtéEnPossessionDe <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ,
+                                          :Acide_Fluoro-Antimonique ,
+                                          :Epee_Legendaire_Excalibur ,
+                                          :Formol ,
+                                          :Katana ,
+                                          :Penny_Géant ,
+                                          :Pied_de_Biche ,
+                                          :café ;
+        cluedonto:est_ou_a_été_dans_la_place :Chambre ,
+                                             :Conda ,
+                                             :Cuisine ,
+                                             :Home_Cinema ,
+                                             :Piece_exposition_Lego ,
+                                             :coin_Cheminee ;
+        cluedonto:personneDansPiece :Atelier ;
+        cluedonto:a_été_morte_depuis "3"^^xsd:nonNegativeInteger ;
+        cluedonto:estVivant "false"^^xsd:boolean ;
+        rdfs:label "Omar Tyr" .
+
+
+###  http://www.lamaisondumeurtre.fr/BC#échafaud_pour_Peinture
+:échafaud_pour_Peinture rdf:type owl:NamedIndividual ,
+                                 cluedonto:zone ;
+                        cluedonto:organise_autour :Peinture_Murale .
+
+
+###  https://w3id.org/cluedo4KG/onto#LaBibliothèque
+cluedonto:LaBibliothèque rdf:type owl:NamedIndividual ,
+                                  cluedonto:Piece ;
+                         cluedonto:pièce_dans_floor <https://w3id.org/cluedo4KG/onto#1er_Etage> .
+
+
+###  https://w3id.org/cluedo4KG/onto#arme_cause
+cluedonto:arme_cause rdf:type owl:NamedIndividual ,
+                              cluedonto:responsibleForMurder ;
+                     cluedonto:objet_mobile_attribué_à cluedonto:death_cause .
+
+
+###  https://w3id.org/cluedo4KG/onto#bistouri
+cluedonto:bistouri rdf:type owl:NamedIndividual ,
+                            cluedonto:sharp ;
+                   owl:sameAs cluedonto:scalpel .
+
+
+###  https://w3id.org/cluedo4KG/onto#scalpel
+
+###  https://w3id.org/cluedo4KG/onto#death_cause
+cluedonto:death_cause rdf:type owl:NamedIndividual ,
+                               cluedonto:causeofdeath ;
+                      cluedonto:a_causé_la_mort :premie .
+
+
+###  https://w3id.org/cluedo4KG/onto#scalpel
+cluedonto:scalpel rdf:type owl:NamedIndividual ,
+                           cluedonto:sharp ;
+                  cluedonto:objetDansPiece :Serre .
+
+
+###  https://w3id.org/cluedo4KG/onto#1er_Etage
+<https://w3id.org/cluedo4KG/onto#1er_Etage> rdf:type owl:NamedIndividual ,
+                                                     cluedonto:floor .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cluedonto:blunt
+                cluedonto:firearm
+                cluedonto:product
+                cluedonto:sharp
+                cluedonto:soft
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cluedonto:bluntObjectInjury
+                cluedonto:bulletInjury
+                cluedonto:sharpObjectInjury
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cluedonto:drowning
+                cluedonto:injury
+                cluedonto:poisoning
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( cluedonto:innocent
+                cluedonto:murderer
+                cluedonto:victim
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :An
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

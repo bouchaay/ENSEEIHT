@@ -1,0 +1,600 @@
+@prefix : <http://www.lamaisondumeurtre.fr/BC#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix www: <http://www.lamaisondumeurtre.fr#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.lamaisondumeurtre.fr/BC> .
+###  http://www.lamaisondumeurtre.fr#Acide_Fluoro-Antimonique
+:Acide_Fluoro-Antimonique rdf:type owl:NamedIndividual ,
+                                   :12 ;
+                          :objetDansPiece :21 ;
+                          :1 "2.36"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr#Alcool_à_brûler
+:Alcool_à_brûler rdf:type owl:NamedIndividual ,
+                          :12 ;
+                 :objetDansPiece :24 ;
+                 :1 "0.9"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr#Amy_Stake
+:Amy_Stake rdf:type owl:NamedIndividual ,
+                    :Personne ;
+           :5 :24 ,
+                              :Cuisine ,
+                              :coin_Cheminee ,
+                              :espace_de_Restauration ,
+                              :échafaud_pour_Peinture ;
+           :personneDansPiece :24 ;
+           :11 :Buste_de_Tim_Berners_Lee ,
+                              :Dague ,
+                              :Epee_Legendaire_Excalibur ,
+                              :Katana ,
+                              :Pied_de_Biche ,
+                              :Tronçonneuse ;
+           rdfs:label "Amy Stake" .
+
+
+###  http://www.lamaisondumeurtre.fr#Ana_Conda
+:23 rdf:type owl:NamedIndividual ,
+                    :Personne ;
+           :5 :24 ,
+                              :Chambre ,
+                              :Salon ,
+                              :échafaud_pour_Peinture ;
+           :personneDansPiece :24 ;
+           :11 :Formol ,
+                              :Katana ,
+                              :Penny_Géant ,
+                              :Revolver_Python_357 ,
+                              :oreiller ;
+           rdfs:label "Ana Conda" .
+
+
+###  http://www.lamaisondumeurtre.fr#Ann_Geber
+:Ann_Geber rdf:type owl:NamedIndividual ,
+                    :Personne ;
+           :5 :Chambre ,
+                              :coin_Cheminee ;
+           :personneDansPiece :Chambre ;
+           :11 :Ballon_ovale_dégonflé ,
+                              :Bouteille_en_sucre ,
+                              :Epee_Legendaire_Excalibur ,
+                              :Glaive ,
+                              :Katana ,
+                              :Lance ,
+                              :Mort_au_rats ,
+                              :Nokia_3310 ,
+                              :Peluche_de_Requin ,
+                              :Poignard ,
+                              :Scie_Sauteuse ,
+                              :Tronçonneuse ;
+           rdfs:label "Ann Geber" .
+
+
+###  http://www.lamaisondumeurtre.fr#Atelier
+:Atelier rdf:type owl:NamedIndividual ,
+                  :Piece ;
+         :aPourPieceVoisine :Dressing ;
+         :pieceContientObjet :Peinture_Murale .
+
+
+###  http://www.lamaisondumeurtre.fr#Ballon_ovale_dégonflé
+:Ballon_ovale_dégonflé rdf:type owl:NamedIndividual ,
+                                :13 ;
+                       :objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr#Bertha_Bassez
+:Bertha_Bassez rdf:type owl:NamedIndividual ,
+                        :Personne ;
+               :5 :Atelier ,
+                                  :Dressing ,
+                                  :21 ,
+                                  :coin_Cheminee ,
+                                  :échafaud_pour_Peinture ;
+               :personneDansPiece :Chambre ;
+               :11 :Alcool_à_brûler ,
+                                  :Bouteille_en_sucre ,
+                                  :Dague ,
+                                  :Epee_Legendaire_Excalibur ,
+                                  :Glaive ,
+                                  :Lance ,
+                                  :Nokia_3310 ,
+                                  :Pied_de_Biche ,
+                                  :Scie_Sauteuse ,
+                                  :Tronçonneuse ,
+                                  <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ;
+               rdfs:label "Bertha Bassez" .
+
+
+###  http://www.lamaisondumeurtre.fr#Bibliothèque
+:24 rdf:type owl:NamedIndividual ,
+                       :Piece ;
+              :aPourPieceVoisine :Chambre ,
+                                 :Cuisine .
+
+
+###  http://www.lamaisondumeurtre.fr#Boule_Disco
+:Boule_Disco rdf:type owl:NamedIndividual ,
+                      :objetImmobile ;
+             :3 :Dance_Floor .
+
+
+###  http://www.lamaisondumeurtre.fr#Bouteille_en_sucre
+:Bouteille_en_sucre rdf:type owl:NamedIndividual ,
+                             :14 ;
+                    :objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr#Buste_de_Tim_Berners_Lee
+:Buste_de_Tim_Berners_Lee rdf:type owl:NamedIndividual ,
+                                   :14 ;
+                          :objetDansPiece :Home_Cinema .
+
+
+###  http://www.lamaisondumeurtre.fr#Chambre
+:Chambre rdf:type owl:NamedIndividual ,
+                  :Piece ;
+         :9  :coin_Cheminee .
+
+
+###  http://www.lamaisondumeurtre.fr#Cuisine
+:Cuisine rdf:type owl:NamedIndividual ,
+                  :Piece .
+
+
+###  http://www.lamaisondumeurtre.fr#Dague
+:Dague rdf:type owl:NamedIndividual ,
+                :15  ;
+       :objetDansPiece :Atelier .
+
+
+###  http://www.lamaisondumeurtre.fr#Dance_Floor
+:Dance_Floor rdf:type owl:NamedIndividual ,
+                      :18 .
+
+
+###  http://www.lamaisondumeurtre.fr#Dressing
+:Dressing rdf:type owl:NamedIndividual ,
+                   :Piece ;
+          :pieceContientPersonne :Jango_Tham .
+
+
+###  http://www.lamaisondumeurtre.fr#Ella_Dron
+:Ella_Dron rdf:type owl:NamedIndividual ,
+                    :Personne ;
+           :4  :Salon ;
+           :5 :Dance_Floor ;
+           :11 :Alcool_à_brûler ,
+                              :Dague ,
+                              :Nokia_3310 ,
+                              :Peluche_de_Requin ,
+                              :Poignard ,
+                              <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ,
+                              <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ;
+           rdfs:label "Ella Dron" .
+
+
+###  http://www.lamaisondumeurtre.fr#Epee_Legendaire_Excalibur
+:Epee_Legendaire_Excalibur rdf:type owl:NamedIndividual ,
+                                    :15  ;
+                           :objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr#Formol
+:Formol rdf:type owl:NamedIndividual ,
+                 :19 ;
+        :objetDansPiece :24 .
+
+
+###  http://www.lamaisondumeurtre.fr#Glaive
+:Glaive rdf:type owl:NamedIndividual ,
+                 :15  ;
+        :objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr#Hachoir_de_Cuisine
+:Hachoir_de_Cuisine rdf:type owl:NamedIndividual ,
+                             :15  ;
+                    :objetDansPiece :Cuisine .
+
+
+###  http://www.lamaisondumeurtre.fr#Home_Cinema
+:Home_Cinema rdf:type owl:NamedIndividual ,
+                      :Piece .
+
+
+###  http://www.lamaisondumeurtre.fr#Jango_Tham
+:Jango_Tham rdf:type owl:NamedIndividual ,
+                     :Personne ;
+            :5 :Dance_Floor ,
+                               :Dressing ,
+                               :Piece_exposition_Lego ;
+            :10 :Revolver_Python_357 ;
+            :11 :Alcool_à_brûler ,
+                               :Epee_Legendaire_Excalibur ,
+                               :Formol ,
+                               :Glaive ,
+                               :Peluche_de_Requin ,
+                               :Penny_Géant ,
+                               :Tronçonneuse ,
+                               :café ,
+                               :curry ,
+                               :cyanure ,
+                               <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ;
+            rdfs:label "Jango Tham" .
+
+
+###  http://www.lamaisondumeurtre.fr#Jean_Neymar
+:Jean_Neymar rdf:type owl:NamedIndividual ,
+                      :Personne ;
+             :5 :Atelier ,
+                                :coin_Cheminee ;
+             :personneDansPiece :Atelier ;
+             :11 :Alcool_à_brûler ,
+                                :Ballon_ovale_dégonflé ,
+                                :Hachoir_de_Cuisine ,
+                                :Katana ,
+                                :Poignard ,
+                                :Tronçonneuse ,
+                                :café ,
+                                :curry ;
+             rdfs:label "Jean Neymar" .
+
+
+###  http://www.lamaisondumeurtre.fr#Justin_Case
+:Justin_Case rdf:type owl:NamedIndividual ,
+                      :Personne ;
+             :5 :Cuisine ,
+                                :Dressing ,
+                                :Home_Cinema ,
+                                :21 ,
+                                :coin_Cheminee ,
+                                :espace_de_Restauration ;
+             :personneDansPiece :Home_Cinema ;
+             :11 :Acide_Fluoro-Antimonique ,
+                                :Peluche_de_Requin ,
+                                :Revolver_Python_357 ,
+                                :Scie_Sauteuse ,
+                                :cyanure ,
+                                <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ;
+             rdfs:label "Justin Case" .
+
+
+###  http://www.lamaisondumeurtre.fr#Katana
+:Katana rdf:type owl:NamedIndividual ,
+                 :15  ;
+        :objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr#Lance
+:Lance rdf:type owl:NamedIndividual ,
+                :15  ;
+       :objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr#Lena_Ture
+:Lena_Ture rdf:type owl:NamedIndividual ,
+                    :Personne ;
+           :5 :Dance_Floor ,
+                              :Dressing ,
+                              :Salon ,
+                              :21 ;
+           :personneDansPiece :21 ;
+           :11 :Hachoir_de_Cuisine ,
+                              :Mort_au_rats ,
+                              :Pied_de_Biche ,
+                              :oreiller ,
+                              <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ;
+           rdfs:label "Lena Ture" .
+
+
+###  http://www.lamaisondumeurtre.fr#Manoir_Tamanoir
+:Manoir_Tamanoir rdf:type owl:NamedIndividual ,
+                          :Maison ;
+                 :7 :RDC ,
+                                      :22 ,
+                                      :25 ,
+                                      <http://www.lamaisondumeurtre.fr#2eme_Etage> .
+
+
+###  http://www.lamaisondumeurtre.fr#Marc_Luedo
+:Marc_Luedo rdf:type owl:NamedIndividual ,
+                     :Personne ;
+            :5 :Atelier ,
+                               :Cuisine ,
+                               :Piece_exposition_Lego ,
+                               :coin_Cheminee ,
+                               :espace_de_Restauration ;
+            :personneDansPiece :Atelier ;
+            :11 :Alcool_à_brûler ,
+                               :Pied_de_Biche ;
+            rdfs:label "Marc Luedo" .
+
+
+###  http://www.lamaisondumeurtre.fr#Mort_au_rats
+:Mort_au_rats rdf:type owl:NamedIndividual ,
+                       :12 ;
+              :objetDansPiece :21 ;
+              :1 "2.6"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr#Nokia_3310
+:Nokia_3310 rdf:type owl:NamedIndividual ,
+                     :14 ;
+            :objetDansPiece :21 .
+
+
+###  http://www.lamaisondumeurtre.fr#Omar_Tyr
+:26 rdf:type owl:NamedIndividual ,
+                   :Personne ;
+          :5 :24 ,
+                             :Chambre ,
+                             :Cuisine ,
+                             :Home_Cinema ,
+                             :Piece_exposition_Lego ,
+                             :coin_Cheminee ;
+          :personneDansPiece :Atelier ;
+          :11 :Acide_Fluoro-Antimonique ,
+                             :Epee_Legendaire_Excalibur ,
+                             :Formol ,
+                             :Katana ,
+                             :Penny_Géant ,
+                             :Pied_de_Biche ,
+                             :café ,
+                             <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ;
+          :2 "3"^^xsd:nonNegativeInteger ;
+          :estVivant "false"^^xsd:boolean ;
+          rdfs:label "Omar Tyr" .
+
+
+###  http://www.lamaisondumeurtre.fr#Osama_Najimi
+:Osama_Najimi rdf:type owl:NamedIndividual ,
+                       :Personne ;
+              :5 :24 ,
+                                 :Chambre ,
+                                 :Dance_Floor ,
+                                 :Home_Cinema ,
+                                 :espace_de_Restauration ,
+                                 :échafaud_pour_Peinture ;
+              :personneDansPiece :Salon ;
+              :11 :oreiller ;
+              rdfs:label "Osama Najimi" .
+
+
+###  http://www.lamaisondumeurtre.fr#Oscar_Bone
+:Oscar_Bone rdf:type owl:NamedIndividual ,
+                     :Personne ;
+            :5 :Cuisine ,
+                               :Home_Cinema ,
+                               :Piece_exposition_Lego ,
+                               :espace_de_Restauration ;
+            :personneDansPiece :Piece_exposition_Lego ;
+            :11 :Epee_Legendaire_Excalibur ,
+                               :Katana ;
+            rdfs:label "Oscar Bone" .
+
+
+###  http://www.lamaisondumeurtre.fr#Peinture_Murale
+:Peinture_Murale rdf:type owl:NamedIndividual ,
+                          :objetImmobile .
+
+
+###  http://www.lamaisondumeurtre.fr#Peluche_de_Requin
+:Peluche_de_Requin rdf:type owl:NamedIndividual ,
+                            :13 ;
+                   :objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr#Penny_Géant
+:Penny_Géant rdf:type owl:NamedIndividual ,
+                      :14 ;
+             :objetDansPiece :24 .
+
+
+###  http://www.lamaisondumeurtre.fr#Perla_Madonna
+:Perla_Madonna rdf:type owl:NamedIndividual ,
+                        :Personne ;
+               :5 :Atelier ,
+                                  :coin_Cheminee ;
+               :personneDansPiece :Chambre ;
+               :11 :Bouteille_en_sucre ,
+                                  :Buste_de_Tim_Berners_Lee ,
+                                  :Epee_Legendaire_Excalibur ,
+                                  :Glaive ,
+                                  :café ,
+                                  :oreiller ,
+                                  <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ,
+                                  <http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> ;
+               rdfs:label "Perla Madonna" .
+
+
+###  http://www.lamaisondumeurtre.fr#Piece_exposition_Lego
+:Piece_exposition_Lego rdf:type owl:NamedIndividual ,
+                                :Piece ;
+                       :aPourPieceVoisine :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr#Pied_de_Biche
+:Pied_de_Biche rdf:type owl:NamedIndividual ,
+                        :14 ;
+               :objetDansPiece :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr#Poignard
+:Poignard rdf:type owl:NamedIndividual ,
+                   :15  ;
+          :objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr#Polly_Esther
+:Polly_Esther rdf:type owl:NamedIndividual ,
+                       :Personne ;
+              :5 :Dressing ;
+              :personneDansPiece :Dressing ;
+              :11 :Acide_Fluoro-Antimonique ,
+                                 :Dague ,
+                                 :Glaive ,
+                                 :Katana ,
+                                 :Nokia_3310 ,
+                                 :Peluche_de_Requin ,
+                                 :Pied_de_Biche ,
+                                 :Poignard ,
+                                 :Scie_Sauteuse ,
+                                 :Tronçonneuse ,
+                                 :café ,
+                                 :curry ,
+                                 <http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> ;
+              rdfs:label "Polly Esther" .
+
+
+###  http://www.lamaisondumeurtre.fr#RDC
+:RDC rdf:type owl:NamedIndividual ,
+              :16 ;
+     :6  :Home_Cinema ,
+                         :Piece_exposition_Lego ,
+                         :Salon .
+
+
+###  http://www.lamaisondumeurtre.fr#Raimond_Tology
+:Raimond_Tology rdf:type owl:NamedIndividual ,
+                         :Personne ;
+                :5 :Atelier ,
+                                   :Home_Cinema ,
+                                   :coin_Cheminee ,
+                                   :espace_de_Restauration ,
+                                   :échafaud_pour_Peinture ;
+                :personneDansPiece :Salon ;
+                :11 :Buste_de_Tim_Berners_Lee ,
+                                   :Katana ,
+                                   :Penny_Géant ,
+                                   :Tronçonneuse ,
+                                   :curry ;
+                rdfs:label "Raimond Tology" .
+
+
+###  http://www.lamaisondumeurtre.fr#Revolver_Python_357
+:Revolver_Python_357 rdf:type owl:NamedIndividual ,
+                              :17 ;
+                     :objetDansPiece :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr#Roger_Rienkompri
+:Roger_Rienkompri rdf:type owl:NamedIndividual ,
+                           :Personne ;
+                  :5 :Dance_Floor ,
+                                     :Dressing ,
+                                     :Home_Cinema ,
+                                     :coin_Cheminee ,
+                                     :échafaud_pour_Peinture ;
+                  :personneDansPiece :Atelier ;
+                  :11 :Acide_Fluoro-Antimonique ,
+                                     :Ballon_ovale_dégonflé ,
+                                     :Formol ,
+                                     :Poignard ;
+                  rdfs:label "Roger Rienkompri" .
+
+
+###  http://www.lamaisondumeurtre.fr#Salon
+:Salon rdf:type owl:NamedIndividual ,
+                :Piece ;
+       :aPourPieceVoisine :Home_Cinema ,
+                          :Piece_exposition_Lego ;
+       :9  :Dance_Floor ,
+                            :espace_de_Restauration .
+
+
+###  http://www.lamaisondumeurtre.fr#Scie_Sauteuse
+:Scie_Sauteuse rdf:type owl:NamedIndividual ,
+                        :15  ;
+               :objetDansPiece :Chambre .
+
+
+###  http://www.lamaisondumeurtre.fr#Serre
+:21 rdf:type owl:NamedIndividual ,
+                :Piece .
+
+
+###  http://www.lamaisondumeurtre.fr#Tronçonneuse
+:Tronçonneuse rdf:type owl:NamedIndividual ,
+                       :15  ;
+              :objetDansPiece :Chambre .
+
+
+###  http://www.lamaisondumeurtre.fr#café
+:café rdf:type owl:NamedIndividual ,
+               :12 ;
+      :objetDansPiece :Salon ;
+      :1 "4.0"^^xsd:float .
+
+
+###  http://www.lamaisondumeurtre.fr#coin_Cheminee
+:coin_Cheminee rdf:type owl:NamedIndividual ,
+                        :18 .
+
+
+###  http://www.lamaisondumeurtre.fr#curry
+:curry rdf:type owl:NamedIndividual ,
+                :20 ;
+       :objetDansPiece :Piece_exposition_Lego .
+
+
+###  http://www.lamaisondumeurtre.fr#cyanure
+:cyanure rdf:type owl:NamedIndividual ,
+                  :20 ;
+         :objetDansPiece :Home_Cinema .
+
+
+###  http://www.lamaisondumeurtre.fr#espace_de_Restauration
+:espace_de_Restauration rdf:type owl:NamedIndividual ,
+                                 :18 .
+
+
+###  http://www.lamaisondumeurtre.fr#oreiller
+:oreiller rdf:type owl:NamedIndividual ,
+                   :13 ;
+          :objetDansPiece :24 .
+
+
+###  http://www.lamaisondumeurtre.fr#serreEtage
+:22 rdf:type owl:NamedIndividual ,
+                     :16 ;
+            :6  :21 .
+
+
+###  http://www.lamaisondumeurtre.fr#échafaud_pour_Peinture
+:échafaud_pour_Peinture rdf:type owl:NamedIndividual ,
+                                 :18 ;
+                        :8 :Peinture_Murale .
+
+
+###  http://www.lamaisondumeurtre.fr#1er_Etage
+:25 rdf:type owl:NamedIndividual ,
+                                                     :16 ;
+                                            :6  :24 ,
+                                                                :Chambre ,
+                                                                :Cuisine .
+
+
+###  http://www.lamaisondumeurtre.fr#2eme_Etage
+<http://www.lamaisondumeurtre.fr#2eme_Etage> rdf:type owl:NamedIndividual ,
+                                                      :16 ;
+                                             :6  :Atelier ,
+                                                                 :Dressing .
+
+
+###  http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla
+<http://www.lamaisondumeurtre.fr#L'Assomoir_d'Emile_ZOla> rdf:type owl:NamedIndividual ,
+                                                                   :14 ;
+                                                          :objetDansPiece :Atelier .
+
+
+###  http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène
+<http://www.lamaisondumeurtre.fr#Peroxyde_d'Hydrogène> rdf:type owl:NamedIndividual ,
+                                                                :19 ;
+                                                       :objetDansPiece :Salon .
+
